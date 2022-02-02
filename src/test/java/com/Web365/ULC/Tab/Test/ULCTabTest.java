@@ -68,6 +68,7 @@ public class ULCTabTest extends ULCBaseTest {
 		intWorld.certificateInTEFLImage.click();
 		Thread.sleep(1000);
 		
+		//a new step
 		Assert.assertTrue(intWorld.downloadTEFLInfbtn.isDisplayed());
 		intWorld.downloadTEFLInfbtn.click();
 		Thread.sleep(1000);
