@@ -12,4 +12,5 @@ public class ULCHomePageTabConstants {
 	public static final String GERMAN_PAGE_IMAGE_XPATH ="//img[@src='/img/exam-4.png']";
 	public static final String CORPORATIVE_PACK_IMAGE_XPATH ="//div[@class='cont-animation']//a[@href='/Home/Corporate']";
 	public static final String ANIMATED_IMAGES_XPATH ="//div[@class='swiper-container partner_slide map swiper-container-horizontal']";
+	public static final String COURSES_PAGE_IMAGES_XPATH ="//div[@class='cont-animation']//a[@href='/Home/Courses']";
 }
