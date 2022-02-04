@@ -11,5 +11,7 @@ public class ULCHomePageConstants {
 	public static final String COURSES_TAB_XPATH = "//a[@href='#' and text()= 'Courses']//span[@class='fa fa-angle-down']";
 	public static final String CONTACTS_TAB_XPATH = "//li//a[@href='/Home/Contact']";
 	public static final String HOME_PAGE_NEWS_XPATH = "//div[@class='swiper-text ']//a[@href='/Home/News' and text()= 'News']";
-	//public static final String  = "";
+	public static final String  NAVIGATION_BAR_XPATH= "//ul[@class='nav-bar']";
+//public static final String  = "";
+	
 }

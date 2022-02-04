@@ -39,6 +39,9 @@ public class ULCHomePage extends ULCBasePage{
 		public WebElement contactsTab;
 @FindBy(xpath = HOME_PAGE_NEWS_XPATH)
 		public WebElement homeNewsBtn;
+@FindBy(xpath = NAVIGATION_BAR_XPATH)
+		public WebElement navigBar;
+
 public ULCHomePage logoClick() {
 	logo.click();
 	return new ULCHomePage(this.driver);
@@ -63,7 +66,7 @@ public ULCIntesolWorldwidePage goToIntesolWorldwide() {
 	intesolWorldwideTab.click();
 	return new ULCIntesolWorldwidePage(this.driver);
 }
-public ULCursesPage goCourses() {
+public ULCursesPage goToCourses() {
 	coursesTab.click();
 	return new ULCursesPage(this.driver);
 }
@@ -71,7 +74,10 @@ public ULCContactsPage goToContacts() {
 	contactsTab.click();
 	return new ULCContactsPage(this.driver);
 }
-
+public ULCContactsPage goToNavigBar() {
+	navigBar.click();
+	return new ULCContactsPage(this.driver);
+}
 	
 
 }
