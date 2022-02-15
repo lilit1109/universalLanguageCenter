@@ -9,6 +9,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import com.Web365.ULC.Page.Home.ULCHomePage;
+
+
+
 public class ULCBaseTest {
 	
 	protected WebDriver driver;
@@ -18,19 +21,20 @@ public class ULCBaseTest {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(ULC_URL);
-		ULCHomePage home = new ULCHomePage(driver);
+	ULCHomePage home = new ULCHomePage(driver);
 		home = home.logoClick();
 		Assert.assertTrue(home.homeTab.isDisplayed());
 		
+		}
 		
 		
-		
-	}
+
 	
 	@AfterClass
-	public void tearDown() {
+	public void tearDown() throws InterruptedException {
 		driver.close();
 		driver.quit();
+		Thread.sleep(5000);
 	}
 
 }

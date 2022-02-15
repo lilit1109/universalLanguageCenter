@@ -1,33 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="ULC Regression suite">
-  <test thread-count="1" verbose="2" name="ULC Tab Test">
-    <classes>
-		<class name="com.Web365.ULC.Tab.Test.ULCTabTest" ></class>
-		<class name="com.Web365.ULC.Tab.Test.ULCHomeTabPageTest">
-		  <methods>
-		<include name="uLCHomePageCoursesTest" />
-		<include name="uLCHomePageUniKidsTest" />
-		<include name="uLCHomePageIntExamTest" />
-		<include name="uLCHomePageCorpPackTest" />
-		</methods>
-		</class>
-		<class name="com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest">
-		<methods>
-		<include name="uLCHomePageAboutUsAboutUsTest" />
-		<include name="uLCHomePageAboutUsStaffTest" />
-		<include name="uLCHomePageAboutUsVacancyTest" />
-		<include name="uLCHomePageAboutUsGalleryTest" />
-		
-		</methods></class>
-		<class name="com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest"></class>
-		<class name="com.Web365.ULC.Tab.Test.ULCInternExamTabPageTest"></class>
-		<class name="com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest"></class>
-		<class name="com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest"></class>
-		<class name="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest"></class>
-     </classes>
+	<test thread-count="1" verbose="2" name="ULC Tab Test">
+		<classes>
+			  <class name="com.Web365.ULC.Tab.Test.ULCTabTest">
+			  <methods>
+			  <include name="universalLanguageCenterPageTest" />
+			  <include name="uLCPageBookNowTest" />
+			  </methods>
+			  </class>
+			<class name="com.Web365.ULC.Tab.Test.ULCHomeTabPageTest">
+				<methods>
+					<include name="uLCHomePageRegisterTest" />
+					<include name="uLCHomePageCoursesTest" />
+					<include name="uLCCoursesGermanLanguageTest" />
+					<include name="uLCCoursesRussianLanguageTest" />
+					<include name="uLCHomePageUniKidsTest" />
+					<include name="uLCHomePageIntExamTest" />
+					<include name="uLCHomePageCorpPackTest" />
+				</methods>
+			</class>
+			<class name="com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest">
+				<methods>
+					<include name="uLCHomePageAboutUsAboutUsTest" />
+					<include name="uLCHomePageAboutUsStaffTest" />
+					<include name="uLCHomePageAboutUsVacancyTest" />
+					<include name="uLCHomePageAboutUsGalleryTest" />
+					<include name="uLCGalleryImagesTest" />
 
-  </test> <!-- Default test -->
-  
-  
+				</methods>
+			</class>
+			<class name="com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest">
+				<methods>
+					<include name="uLCHomePageCorpPacksTest" />
+					<include name="uLCHomePageCorpPacksPdfTest" />
+					<include name="uLCHomePageCorpPacksSlideMapTest" />
+				</methods>
+			</class>
+			<class name="com.Web365.ULC.Tab.Test.ULCInternExamTabPageTest">
+				<methods>
+					<include name="uLCInternExamTabTest" />
+				</methods>
+			</class>
+			<class name="com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest">
+				<methods>
+					<include name="uLCIntesolWorldTPageTest" />
+					<include name="uLCIntesolWorldESPPageTest" />
+				</methods>
+			</class>
+			<class name="com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest">
+				<methods>
+					<include name="uLCCoursesTabLangPageTest" />
+					<include name="uLCCoursesTabUniKidsPageTest" />
+					<include name="uLCCoursesTabUniKidsEnglishTabTest" />
+					<include name="uLCCoursesTabUniKidsGermanTabTest" />
+					<include name="uLCCoursesTabUniKidsFrenchTabTest" />
+					<include name="uLCCoursesTabLevelsPageTest" />
+					<include name="uLCCoursesTabTariffsPageTest" />
+					<include name="uLCCoursesTabSeminarsPageTest" />
+					<include name="uLCCoursesTabNewsPageTest" />
+				</methods>
+			</class>
+			<class name="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest">
+				<methods>
+					<include name="uLCContactsTabPageTest" />
+					<include name="uLCContactsPersonalInfoPageTest" />
+					<include name="uLCPersonalInfoNameFieldTest" />
+					<include name="uLCPersonalInfoEmailFieldTest" />
+					<include name="uLCPersonalInfoPhoneFieldTest" />
+					<include name="uLCPersonalInfoMessageFieldTest" />
+					<include name="uLCContactsPageMapTest" />
+					<exclude name="uLCContactsPageMapDirectionTest" />
+					<exclude name="uLCPagePlaceCardReviewTest" />
+					<include name="uLCContactsPageAboutUsTest" />
+					<include name="uLCContactsPageCategoriesTest" />
+					<include name="uLCContactsCategoriesHomeTest" />
+					<include name="uLCContactsCategoriesAboutUSTest" />
+					<include name="uLCContactsCategoriesCorpPacksTest" />
+					<include name="uLCContactsCategoriesInternExamTest" />
+					<include name="uLCContactsCategoriesUniKidsTest" />
+					<include name="uLCContactsCategoriesCoursesTest" />
+					<include name="uLCContactsCategoriesNewsTest" />
+					<include name="uLCContactsCategoriesContactsTest" />
+					<include name="uLCContactsPageFollowUsTest" />
+					<include name="uLCContactsPageAddressTest" />
+					<include name="uLCContactsPagePhoneTest" />
+					<include name="uLCContactsPageEmailTest" />
+					<include name="uLCContactsPageFacebookTest" />
+					<include name="uLCContactsPageInstagramTest" />
+					<include name="uLCContactsPageSkypeTest" />
+				</methods>
+			</class>
+		</classes>
+
+	</test> <!-- Default test -->
+
+
 </suite> <!-- Default suite -->

@@ -28,6 +28,9 @@ public class ULCIntesolWorldwidePage extends ULCHomePage{
 	public WebElement engForAcadPurpose;
 	@FindBy(xpath = CERTIFICATE_IN_ENGLISH_GRAMMAR_XPATH)
 	public WebElement certificateInEngGram;
+	@FindBy(xpath = CERTIFICATE_IN_ENGLISH_GRAMMAR_INFORMATION_XPATH)
+	public WebElement engGramInf;
+	
 	@FindBy(xpath = ENGLISH_FOR_HOSPITALITY_XPATH)
 	public WebElement engForHospitality;
 	@FindBy(xpath = ENGLISH_FOR_HOSPITALITY_INFOR_XPATH)
@@ -39,8 +42,16 @@ public class ULCIntesolWorldwidePage extends ULCHomePage{
 		tesolTeflCourses.click();
 		return new ULCIntesolWorldwidePage(this.driver);
 	}
+	public ULCIntesolWorldwidePage goToEngForHospDwldBtn() {
+		engHospDownload.click();
+		return new ULCIntesolWorldwidePage(this.driver);
+	}
 	public ULCIntesolWorldwidePage goToCertificateInTEFLImage() {
 		certificateInTEFLImage.click();
+		return new ULCIntesolWorldwidePage(this.driver);
+	}
+	public ULCIntesolWorldwidePage goToCertEngGramInf() {
+		engGramInf.click();
 		return new ULCIntesolWorldwidePage(this.driver);
 	}
 	public ULCIntesolWorldwidePage goToCertificateInTEFL() {

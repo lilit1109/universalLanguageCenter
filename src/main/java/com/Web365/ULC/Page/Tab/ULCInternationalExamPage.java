@@ -15,5 +15,20 @@ public class ULCInternationalExamPage extends ULCHomePage{
 	}
 	@FindBy(xpath= INTERN_EXAMS_PAGE_XPATH)
 	public WebElement intExamPage;
+	@FindBy(xpath= INTERN_EXAMS_TOEFL_INFO_XPATH)
+	public WebElement intExamToefl;
+	
+	
+	public ULCInternationalExamPage goToInternExamPage() {
+	intExamPage.click();
+	return new ULCInternationalExamPage(this.driver);	
+	}
+	public ULCInternationalExamPage goToIntExamToeflInf() {
+	intExamToefl.click();
+	return new ULCInternationalExamPage(this.driver);
+		
+	}
+	
+	
 	
 	}

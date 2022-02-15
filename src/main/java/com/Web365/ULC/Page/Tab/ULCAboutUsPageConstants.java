@@ -14,7 +14,9 @@ public class ULCAboutUsPageConstants {
 	public static final String GALLERY_IMAGES_NEXT_BTN_XPATH ="//a[@class='jp-next']";
 	public static final String GALLERY_IMAGES_PREV_BTN_XPATH = "//a[@class='jp-previous']";
 	public static final String GALLERY_ACTIVE_CURRENT_PAGE_XPATH = "//a[@class='jp-current']";
-	public static final String INFORMATION_IMAGE_XPATH = "//img[@class='fancybox-image' and @src='/img/11.jpg']";
+	public static final String INFORMATION_IMAGE_XPATH = "//a[@href='/img/5.jpg' and @class='works-a-hov']";
 	public static final String CLOSE_BTN_XPATH = "//button[@class='fancybox-button fancybox-button--close']";
-
+	public static final String FULL_SCREEN_BTN_XPATH = "//button[@class='fancybox-button fancybox-button--fullscreen']";
+	public static final String RIGHT_ARROW_BATTON_XPATH = "//button[@class='fancybox-button fancybox-button--right']";
+	public static final String LEFT_ARROW_BATTON_XPATH = "//button[@class='fancybox-button fancybox-button--left']";
 }

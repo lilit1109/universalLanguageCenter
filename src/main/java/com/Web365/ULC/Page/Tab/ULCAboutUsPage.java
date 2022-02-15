@@ -19,7 +19,10 @@ public class ULCAboutUsPage extends ULCHomePage {
 
 	@FindBy(xpath = ABOUTUS_PAGE_TEXT_XPATH)
 	public WebElement aboutUsText;
-
+	@FindBy(xpath = RIGHT_ARROW_BATTON_XPATH)
+	public WebElement rightArrowBtn;
+	@FindBy(xpath = LEFT_ARROW_BATTON_XPATH)
+	public WebElement leftArrowBtn;
 	@FindBy(xpath = ABOUTUS_PAGE_IMAGE_XPATH)
 	public WebElement aboutUsPageImg;
 	@FindBy(xpath = INSTAGRAM_BATTON_XPATH)
@@ -34,6 +37,8 @@ public class ULCAboutUsPage extends ULCHomePage {
 	public WebElement aboutUsGallery;
 	@FindBy(xpath = GALLERY_IMAGES_XPATH)
 	public WebElement galleryImg;
+	@FindBy(xpath = FULL_SCREEN_BTN_XPATH)
+	public WebElement fullScrBtn;
 	@FindBy(xpath = GALLERY_IMAGES_NEXT_BTN_XPATH)
 	public WebElement imgNextBtn;
 	@FindBy(xpath = GALLERY_ACTIVE_CURRENT_PAGE_XPATH)
@@ -50,8 +55,23 @@ public class ULCAboutUsPage extends ULCHomePage {
 		return new ULCAboutUsPage(this.driver);
 	}
 
+	public ULCAboutUsPage goToRightArrowBatton() {
+		rightArrowBtn.click();
+		return new ULCAboutUsPage(this.driver);
+	}
+
+	public ULCAboutUsPage goToLeftArrowBatton() {
+		leftArrowBtn.click();
+		return new ULCAboutUsPage(this.driver);
+	}
+
 	public ULCAboutUsPage goToInfImg() {
 		infImg.click();
+		return new ULCAboutUsPage(this.driver);
+	}
+
+	public ULCAboutUsPage goToFullScreenBtn() {
+		fullScrBtn.click();
 		return new ULCAboutUsPage(this.driver);
 	}
 
