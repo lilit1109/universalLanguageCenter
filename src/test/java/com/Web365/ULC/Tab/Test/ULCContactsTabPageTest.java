@@ -123,8 +123,8 @@ public class ULCContactsTabPageTest extends ULCBaseTest{
 		mapPage = mapPage.goToContactsTab();
 		Actions actions = new Actions(driver);
 		actions.moveToElement(mapPage.contactsPageMap).perform();
-////		Thread.sleep(6000);
-////		actions.moveToElement(mapPage.placeCardDir).perform();
+		Thread.sleep(2000);
+	//actions.moveToElement(mapPage.placeCardDir).perform();
 ////		mapPage = mapPage.goToPlaceCardDir();
 ////		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 ////		driver.switchTo().window(tabs.get(1));
