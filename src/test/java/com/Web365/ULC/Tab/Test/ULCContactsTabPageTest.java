@@ -1,374 +1,416 @@
 package com.Web365.ULC.Tab.Test;
 
+import java.util.ArrayList;
 
-
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.Web365.ULC.Page.Tab.ULCContactsPage;
 import com.Web365.ULC.Test.Base.ULCBaseTest;
 
-public class ULCContactsTabPageTest extends ULCBaseTest{
-	
+public class ULCContactsTabPageTest extends ULCBaseTest {
+
 	@Test
 	public void uLCContactsTabPageTest() throws InterruptedException {
-	ULCContactsPage contactsTabPage = new ULCContactsPage(driver);
-	Assert.assertTrue(contactsTabPage.contactsTab.isDisplayed());
-	contactsTabPage = contactsTabPage.goToContactsTab();
-	Thread.sleep(5000);	
-	contactsTabPage = new ULCContactsPage(driver);
-	Assert.assertTrue(contactsTabPage.contactInf.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(contactsTabPage.contactsTab).perform();
+		ULCContactsPage contactsTabPage = new ULCContactsPage(driver);
+		System.out.println("The Home page is opened and Contacts Tab is displayed.");
+		contactsTabPage.goToContactsTab();
+		Thread.sleep(2000);
+		System.out.println("The Contacts Page opened and Contacts information is displayed.");
+		contactsTabPage.goToContactInf();
+		Thread.sleep(2000);
+		System.out.println("Return to the Contacts tab.");
+		contactsTabPage.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsPersonalInfoPageTest() throws InterruptedException {
-	ULCContactsPage personalInfPage = new ULCContactsPage(driver);
-	Assert.assertTrue(personalInfPage.contactsTab.isDisplayed());
-	personalInfPage = new ULCContactsPage(driver);
-	Assert.assertTrue(personalInfPage.contactInf.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(personalInfPage.contactsTab).perform();
-	Thread.sleep(2000);
+		ULCContactsPage personalInfPage = new ULCContactsPage(driver);
+		System.out.println("The Home page is opened and Contacts Tab is displayed.");
+		personalInfPage.goToContactsTab();
+		System.out.println("The Contacts Page opened and personal information is displayed.");
+		personalInfPage.goToContactInf();
+		System.out.println("Return to the Contacts tab.");
+		personalInfPage.goToContactsTab();
+		Thread.sleep(2000);
 	}
+
 	@Test
 	public void uLCPersonalInfoNameFieldTest() throws InterruptedException {
-	ULCContactsPage nameField = new ULCContactsPage(driver);
-	Assert.assertTrue(nameField.contactsTab.isDisplayed());
-	nameField = new ULCContactsPage(driver);
-	nameField.fillName("Lilit Todorova");
-	Thread.sleep(4000);
-	nameField = new ULCContactsPage(driver);
-	Assert.assertTrue(nameField.sbmitBtn.isDisplayed());
-	nameField = nameField.goToSbmitbtn();
-	Thread.sleep(4000);
-	nameField = new ULCContactsPage(driver);
-	Assert.assertTrue(nameField.summaryErrors.isDisplayed());
-	nameField = nameField.goToSummaryErrors();
-	Actions actions = new Actions(driver);
-	actions.moveToElement(nameField.contactsTab).perform();
-	Thread.sleep(2000);
-	System.out.println("The Email, Phone, and Message fields are required");
-	Thread.sleep(8000);
-}
+		ULCContactsPage nameField = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened and personal information page is opened.");
+		nameField.goToContactsTab();
+		System.out.println("Type the Name in the personal information name field.");
+		nameField.fillName("Lilit Todorova");
+		Thread.sleep(4000);
+		System.out.println("Click on the Submit button.");
+		nameField.goToSbmitbtn();
+		Thread.sleep(4000);
+		System.out.println("Ensure that the Summary Error is displayed, and Email, Phone, and Message fields are required.");
+		nameField.goToSummaryErrors();
+		System.out.println("Return to the Contacts tab.");
+		nameField.goToContactsTab();
+		Thread.sleep(2000);
+	}
+
 	@Test
 	public void uLCPersonalInfoEmailFieldTest() throws InterruptedException {
-	ULCContactsPage emailField = new ULCContactsPage(driver);
-	Assert.assertTrue(emailField.contactsTab.isDisplayed());
-	emailField = new ULCContactsPage(driver);
-	emailField.fillEmail("My Email Address");
-	Thread.sleep(2000);
-	emailField = new ULCContactsPage(driver);
-	Assert.assertTrue(emailField.sbmitBtn.isDisplayed());
-	emailField = emailField.goToSbmitbtn();
-	Thread.sleep(4000);
-	emailField = new ULCContactsPage(driver);
-	Assert.assertTrue(emailField.summaryErrors.isDisplayed());
-	emailField = emailField.goToSummaryErrors();
-	Actions actions = new Actions(driver);
-	actions.moveToElement(emailField.contactsTab).perform();
-	Thread.sleep(2000);
-	System.out.println("The Phone and Message fields are required");
-	Thread.sleep(8000);
-}
+		ULCContactsPage emailField = new ULCContactsPage(driver);
+		System.out.println("Ensure that the Contacts Tab is opened and personal information page is opened.");
+		emailField.goToContactsTab();
+		System.out.println("Type the Email address in the personal information Email field.");
+		emailField.fillEmail("My Email Address");
+		Thread.sleep(2000);
+		System.out.println("Click on the Submit button.");
+		emailField.goToSbmitbtn();
+		Thread.sleep(4000);
+		System.out.println("Ensure that the Summary Error is displayed, and Name, Phone and Message fields are required.");
+		emailField.goToSummaryErrors();
+		System.out.println("Return to the Contacts tab.");
+		emailField.goToContactsTab();
+		Thread.sleep(2000);
+		System.out.println("Ensure that the validation does not check and ignore that the email format.");
+		Thread.sleep(2000);
+	}
+
 	@Test
 	public void uLCPersonalInfoPhoneFieldTest() throws InterruptedException {
-	ULCContactsPage phoneField = new ULCContactsPage(driver);
-	Assert.assertTrue(phoneField.contactsTab.isDisplayed());
-	phoneField = new ULCContactsPage(driver);
-	phoneField.fillPhoneNum("My Phone Number");
-	Thread.sleep(2000);
-	phoneField = new ULCContactsPage(driver);
-	Assert.assertTrue(phoneField.sbmitBtn.isDisplayed());
-	phoneField = phoneField.goToSbmitbtn();
-	Thread.sleep(4000);
-	phoneField = new ULCContactsPage(driver);
-	Assert.assertTrue(phoneField.summaryErrors.isDisplayed());
-	phoneField = phoneField.goToSummaryErrors();
-	Actions actions = new Actions(driver);
-	actions.moveToElement(phoneField.contactsTab).perform();
-	Thread.sleep(2000);
-	System.out.println("The Message fields are required");
-	Thread.sleep(8000);
-}
+		ULCContactsPage phoneField = new ULCContactsPage(driver);
+		System.out.println("Ensure that the Contacts Tab is opened and personal information page is opened.");
+		phoneField.goToContactsTab();
+		System.out.println("Type the Phone Number in the personal information Phone Number field.");
+		phoneField.fillPhoneNum("My Phone Number");
+		Thread.sleep(2000);
+		System.out.println("Click on the Submit button.");
+		phoneField.goToSbmitbtn();
+		Thread.sleep(4000);
+		System.out.println("Ensure that the Summary Error is displayed, and Name, Phone and Email fields are required.");
+		phoneField.goToSummaryErrors();
+		System.out.println("Return to the Contacts tab.");
+		phoneField.goToContactsTab();
+		Thread.sleep(2000);
+		System.out.println("Ensure that the validation does not check for only numeric requirements and ignores the digit requirements");
+		Thread.sleep(2000);
+	}
+
 	@Test
 	public void uLCPersonalInfoMessageFieldTest() throws InterruptedException {
-	ULCContactsPage messageField = new ULCContactsPage(driver);
-	Assert.assertTrue(messageField.contactsTab.isDisplayed());
-	messageField = new ULCContactsPage(driver);
-	messageField.fillMessage("Feel free to get in touch with us if you have any questions");
-	Thread.sleep(2000);
-	messageField = new ULCContactsPage(driver);
-	Assert.assertTrue(messageField.sbmitBtn.isDisplayed());
-	messageField = messageField.goToSbmitbtn();
-	Thread.sleep(4000);
-	messageField = new ULCContactsPage(driver);
-	Assert.assertTrue(messageField.summaryErrors.isDisplayed());
-	messageField = messageField.goToSummaryErrors();
-	Actions actions = new Actions(driver);
-	actions.moveToElement(messageField.contactsTab).perform();
-	Thread.sleep(2000);
-	System.out.println("All fields are filled");
-	System.out.println("The application did not check the email field email validation value");
-	System.out.println("The application did not check the phone box numeric value");
-	System.out.println("The application did not send a message and returned to the home page");
-	Thread.sleep(8000);
-}
-	
+		ULCContactsPage messageField = new ULCContactsPage(driver);
+		System.out.println("Ensure that the Contacts Tab is opened and personal information page is opened.");
+		messageField.goToContactsTab();
+		System.out.println("Type the Message in the personal information Message field.");
+		messageField.fillMessage("Feel free to get in touch with us if you have any questions");
+		Thread.sleep(2000);
+		System.out.println("Click on the Submit button.");
+		messageField.goToSbmitbtn();
+		Thread.sleep(4000);
+		System.out.println("Ensure that the Summary Error is displayed, and Name, Phone and Email fields are required.");
+		messageField.goToSummaryErrors();
+		messageField = messageField.goToSummaryErrors();
+		System.out.println("Return to the Contacts tab.");
+		messageField.goToContactsTab();
+		Thread.sleep(2000);
+	}
+
+	@Test
+	public void uLCPersonalInfoSubmitTest() throws InterruptedException {
+		ULCContactsPage submitePage = new ULCContactsPage(driver);
+		System.out.println("Ensure that the Contacts Tab is opened and personal information page is opened.");
+		submitePage.goToContactsTab();
+		System.out.println("Type the Name in the personal information name field.");
+		submitePage.fillName("Lilit Todorova");
+		Thread.sleep(4000);
+		System.out.println("Type the Email address in the personal information Email field.");
+		submitePage.fillEmail("My Email Address");
+		Thread.sleep(2000);
+		System.out.println("Type the Phone Number in the personal information Phone Number field.");
+		submitePage.fillPhoneNum("My Phone Number");
+		Thread.sleep(2000);
+		System.out.println("Type the Message in the personal information Message field.");
+		submitePage.fillMessage("Feel free to get in touch with us if you have any questions");
+		Thread.sleep(2000);
+		System.out.println("Click on the Submit button.");
+		submitePage.goToSbmitbtn();
+		Thread.sleep(4000);
+		System.out.println("All fields are filled");
+		System.out.println("Ensure that the application did not send a message and returned to the home page");
+		Thread.sleep(2000);
+		System.out.println("Return to the Contacts tab.");
+		submitePage.goToContactsTab();
+	}
+
 	@Test
 	public void uLCContactsPageMapTest() throws InterruptedException {
 		ULCContactsPage mapPage = new ULCContactsPage(driver);
-		Assert.assertTrue(mapPage.contactsTab.isDisplayed());
-		mapPage = mapPage.goToContactsTab();
-		Actions actions = new Actions(driver);
-		actions.moveToElement(mapPage.contactsPageMap).perform();
+		System.out.println("The Contacts Tab is opened.");
+		mapPage.goToContactsTab();
+		System.out.println("The Contacts Tab is opened and Contacts Page Map is displayed");
+		mapPage.goToContactsPageMap();
 		Thread.sleep(2000);
-	//actions.moveToElement(mapPage.placeCardDir).perform();
-////		mapPage = mapPage.goToPlaceCardDir();
-////		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
-////		driver.switchTo().window(tabs.get(1));
-////		Assert.assertTrue(mapPage.inputStartDir.isDisplayed());
-////		Thread.sleep(6000);
-////        mapPage.fillStartDirection("Mantashyan st");
-////		System.out.println("The Direction is shown on the Google map.");
-////		driver.close();
-////		driver.switchTo().window(tabs.get(0));
-//		Thread.sleep(6000);
-//		actions.moveToElement(mapPage.satelliteMap).perform();
-//		mapPage=mapPage.goToSatelliteMap();
-		Assert.assertTrue(mapPage.contactsPageMap.isDisplayed());
-		actions.moveToElement(mapPage.contactsTab).perform();
+		System.out.println("Ensure that the Contacts tab is displayed.");
+		mapPage.goToContactsTab();
 		Thread.sleep(2000);
 	}
-//	@Test
-//	public void uLCContactsPageMapDirectionTest() throws InterruptedException {
-//	ULCContactsPage contactsMapDir = new ULCContactsPage(driver);
-//	Assert.assertTrue(contactsMapDir.contactsTab.isDisplayed());
-//	Actions actions = new Actions(driver);
-//	actions.moveToElement(contactsMapDir.mapPlaceCard).perform();
-//	contactsMapDir=contactsMapDir.goToPlaceCardDir();
-//	ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
-//	driver.switchTo().window(tabs.get(1));
-//	Thread.sleep(2000);
-//	Assert.assertTrue(contactsMapDir.inputStartDir.isDisplayed());
-//	contactsMapDir.fillStartDirection("Mantashyan st");
-//	System.out.println("The Direction is shown on the Google map.");
-//	driver.close();
-//	driver.switchTo().window(tabs.get(0));
-//	actions.moveToElement(contactsMapDir.contactsTab).perform();
-//	Thread.sleep(2000);
-//	}
-//	@Test
-//	public void uLCPagePlaceCardReviewTest() throws InterruptedException {
-//	ULCContactsPage placeCardReview = new ULCContactsPage(driver);
-//	Assert.assertTrue(placeCardReview.contactsTab.isDisplayed());
-//	placeCardReview = placeCardReview.goToContactsTab();
-//	Actions actions = new Actions(driver);
-//	actions.moveToElement(placeCardReview.placeCardLargMap).perform();
-//	placeCardReview=placeCardReview.goToPlaceCardReview();
-//	ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
-//	driver.switchTo().window(tabs.get(1));
-//	Thread.sleep(2000);
-//	Assert.assertTrue(placeCardReview.reviewPage.isDisplayed());	
-//	placeCardReview = placeCardReview.goToWriteReviewPage();
-//	driver.switchTo().window(tabs.get(2));
-//	Assert.assertTrue(placeCardReview.writeReview.isDisplayed());
-//	driver.close();
-//	driver.switchTo().window(tabs.get(0));
-//	actions.moveToElement(placeCardReview.contactsTab).perform();
-//	Thread.sleep(2000);
-//	}
-	
+
+	@Test
+	public void uLCContactsPageMapDirectionTest() throws InterruptedException {
+		ULCContactsPage contactsMapDir = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		contactsMapDir.goToContactsTab();
+		System.out.println("The Contacts Tab is opened and Contacts Page Map is displayed");
+		Thread.sleep(2000);
+		System.out.println("The Contacts Page Map is opened and Direction is displayed");
+		System.out.println("Type the Start direction");
+		contactsMapDir.fillStartDirection("Mantashyan st");
+		Thread.sleep(2000);
+		System.out.println("Type the End direction");
+		contactsMapDir.fillEndDirection("ULC");
+		System.out.println("Ensure that the direction is displayed");
+		System.out.println("Return to the Contacts tab.");
+		contactsMapDir.goToContactsTab();
+		Thread.sleep(2000);
+	}
+
+	@Test
+	public void uLCPagePlaceCardReviewTest() throws InterruptedException {
+		ULCContactsPage placeCardReview = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		placeCardReview.goToContactsTab();
+		Thread.sleep(2000);
+		System.out.println("The Contacts Tab is opened and Contacts Page Map is displayed");
+		placeCardReview.goToContactsPageMap();
+		Thread.sleep(2000);
+		System.out.println("The Contacts Page Map Review window is opened");
+		placeCardReview.goToReviewPage();
+		Thread.sleep(4000);
+		System.out.println("Review window is opened and WriteReview is displayed");
+		placeCardReview.goToWriteReviewPage();
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(0));
+		Thread.sleep(4000);
+		System.out.println("The Contacts Tab is opened.");
+		placeCardReview.goToContactsTab();
+		
+	}
+
+	@Test
+	public void uLCPageViewLargeMapTest() throws InterruptedException {
+		ULCContactsPage viewLargeMap = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		viewLargeMap.goToContactsTab();
+		Thread.sleep(4000);
+		System.out.println("The Contacts Tab is opened and Contacts Page Map is displayed");
+		viewLargeMap.goToContactsPageMap();
+		Thread.sleep(2000);
+		System.out.println("The Contacts page map is displayed and large map is opened in new window.");
+		viewLargeMap.goToPlaceCardLargMap();
+		Thread.sleep(4000);
+
+	}
+
 	@Test
 	public void uLCContactsPageAboutUsTest() throws InterruptedException {
-	ULCContactsPage contPgAbUs = new ULCContactsPage(driver);
-	Assert.assertTrue(contPgAbUs.contactsTab.isDisplayed());
-	contPgAbUs = contPgAbUs.goToContactsTab();
-	Thread.sleep(5000);	
-	contPgAbUs = new ULCContactsPage(driver);
-	Assert.assertTrue(contPgAbUs.contPgAboutUs.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(contPgAbUs.contactsTab).perform();
+		ULCContactsPage contPgAbUs = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		contPgAbUs.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is AboutUs is displayed");
+		contPgAbUs.goToContPgAboutUs();
+		Thread.sleep(1000);
+		System.out.println("The Contacts Tab is opened.");
+		contPgAbUs.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsPageCategoriesTest() throws InterruptedException {
-	ULCContactsPage contPgCategories = new ULCContactsPage(driver);
-	Assert.assertTrue(contPgCategories.contactsTab.isDisplayed());
-	contPgCategories = contPgCategories.goToContactsTab();
-	Thread.sleep(5000);	
-	contPgCategories = new ULCContactsPage(driver);
-	Assert.assertTrue(contPgCategories.contPgCategories.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(contPgCategories.contactsTab).perform();
+		ULCContactsPage contPgCategories = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		contPgCategories.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is Categories is displayed");
+		contPgCategories.goToContPgCategories();
+		System.out.println("The Contacts Tab is opened.");
+		contPgCategories.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsCategoriesHomeTest() throws InterruptedException {
-	ULCContactsPage categHome = new ULCContactsPage(driver);
-	Assert.assertTrue(categHome.contactsTab.isDisplayed());
-	categHome = categHome.goToContactsTab();
-	Thread.sleep(5000);	
-	categHome = new ULCContactsPage(driver);
-	Assert.assertTrue(categHome.contPgCategHome.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(categHome.contactsTab).perform();
+		ULCContactsPage categHome = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		categHome.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is Home is displayed");
+		categHome.goToContPgCategHome();
+		System.out.println("The Contacts Tab is opened.");
+		categHome.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsCategoriesAboutUSTest() throws InterruptedException {
-	ULCContactsPage categAboutUs = new ULCContactsPage(driver);
-	Assert.assertTrue(categAboutUs.contactsTab.isDisplayed());
-	categAboutUs = categAboutUs.goToContactsTab();
-	Thread.sleep(5000);	
-	categAboutUs = new ULCContactsPage(driver);
-	Assert.assertTrue(categAboutUs.contPgAboutUs.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(categAboutUs.contactsTab).perform();
+		ULCContactsPage categAboutUs = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		categAboutUs.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is AboutUs is displayed");
+		categAboutUs.goToContPgCategAboutUs();
+		System.out.println("The Contacts Tab is opened.");
+		categAboutUs.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsCategoriesCorpPacksTest() throws InterruptedException {
-	ULCContactsPage categCorpPacks = new ULCContactsPage(driver);
-	Assert.assertTrue(categCorpPacks.contactsTab.isDisplayed());
-	categCorpPacks = categCorpPacks.goToContactsTab();
-	Thread.sleep(5000);	
-	categCorpPacks = new ULCContactsPage(driver);
-	Assert.assertTrue(categCorpPacks.contPgCatgCorpPacks.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(categCorpPacks.contactsTab).perform();
+		ULCContactsPage categCorpPacks = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		categCorpPacks.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is Corporate Packs is displayed");
+		categCorpPacks.goToContPgCategCorpPacks();
+		System.out.println("The Contacts Tab is opened.");
+		categCorpPacks.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsCategoriesInternExamTest() throws InterruptedException {
-	ULCContactsPage categIntEx = new ULCContactsPage(driver);
-	Assert.assertTrue(categIntEx.contactsTab.isDisplayed());
-	categIntEx = categIntEx.goToContactsTab();
-	Thread.sleep(5000);	
-	categIntEx = new ULCContactsPage(driver);
-	Assert.assertTrue(categIntEx.contPgCorpInternEx.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(categIntEx.contactsTab).perform();
+		ULCContactsPage categIntEx = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		categIntEx.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is International Exam is displayed");
+		categIntEx.goToContPgCorpInternEx();
+		System.out.println("The Contacts Tab is opened.");
+		categIntEx.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsCategoriesUniKidsTest() throws InterruptedException {
-	ULCContactsPage categUniKIds = new ULCContactsPage(driver);
-	Assert.assertTrue(categUniKIds.contactsTab.isDisplayed());
-	categUniKIds = categUniKIds.goToContactsTab();
-	Thread.sleep(5000);	
-	categUniKIds = new ULCContactsPage(driver);
-	Assert.assertTrue(categUniKIds.contPgCategUniKids.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(categUniKIds.contactsTab).perform();
+		ULCContactsPage categUniKIds = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		categUniKIds.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is UniKids is displayed");
+		categUniKIds.goToContPgCategUniKids();
+		System.out.println("The Contacts Tab is opened.");
+		categUniKIds.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsCategoriesCoursesTest() throws InterruptedException {
-	ULCContactsPage categCourses = new ULCContactsPage(driver);
-	Assert.assertTrue(categCourses.contactsTab.isDisplayed());
-	categCourses = categCourses.goToContactsTab();
-	Thread.sleep(5000);	
-	categCourses = new ULCContactsPage(driver);
-	Assert.assertTrue(categCourses.contPgCategCourses.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(categCourses.contactsTab).perform();
+		ULCContactsPage categCourses = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		categCourses.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is Courses is displayed");
+		categCourses.goToContPgCategCourses();
+		System.out.println("The Contacts Tab is opened.");
+		categCourses.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsCategoriesNewsTest() throws InterruptedException {
-	ULCContactsPage categNews = new ULCContactsPage(driver);
-	Assert.assertTrue(categNews.contactsTab.isDisplayed());
-	categNews = categNews.goToContactsTab();
-	Thread.sleep(5000);	
-	categNews = new ULCContactsPage(driver);
-	Assert.assertTrue(categNews.contPgCategNews.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(categNews.contactsTab).perform();
+		ULCContactsPage categNews = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		categNews.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is News is displayed");
+		categNews.goToContPgCategNews();
+		System.out.println("The Contacts Tab is opened.");
+		categNews.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsCategoriesContactsTest() throws InterruptedException {
-	ULCContactsPage categContacts = new ULCContactsPage(driver);
-	Assert.assertTrue(categContacts.contactsTab.isDisplayed());
-	categContacts = categContacts.goToContactsTab();
-	Thread.sleep(5000);	
-	categContacts = new ULCContactsPage(driver);
-	Assert.assertTrue(categContacts.contPgCategContacts.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(categContacts.contactsTab).perform();
+		ULCContactsPage categContacts = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		categContacts.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is Contacts is displayed");
+		categContacts.goToContPgCategContacts();
+		System.out.println("The Contacts Tab is opened.");
+		categContacts.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsPageFollowUsTest() throws InterruptedException {
-	ULCContactsPage contFollowUs = new ULCContactsPage(driver);
-	Assert.assertTrue(contFollowUs.contactsTab.isDisplayed());
-	contFollowUs = contFollowUs.goToContactsTab();
-	Thread.sleep(5000);	
-	contFollowUs = new ULCContactsPage(driver);
-	Assert.assertTrue(contFollowUs.contPgFollowUs.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(contFollowUs.contactsTab).perform();
+		ULCContactsPage contFollowUs = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		contFollowUs.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is Follow us is displayed");
+		contFollowUs.goToContPgFollowUs();
+		System.out.println("The Contacts Tab is opened.");
+		contFollowUs.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsPageAddressTest() throws InterruptedException {
-	ULCContactsPage contAddress = new ULCContactsPage(driver);
-	Assert.assertTrue(contAddress.contactsTab.isDisplayed());
-	contAddress = contAddress.goToContactsTab();
-	Thread.sleep(5000);	
-	contAddress = new ULCContactsPage(driver);
-	Assert.assertTrue(contAddress.contPgAddress.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(contAddress.contactsTab).perform();
+		ULCContactsPage contAddress = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		contAddress.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is Address is displayed");
+		contAddress.goToContPgAddress();
+		System.out.println("The Contacts Tab is opened.");
+		contAddress.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsPagePhoneTest() throws InterruptedException {
-	ULCContactsPage contPhone = new ULCContactsPage(driver);
-	Assert.assertTrue(contPhone.contactsTab.isDisplayed());
-	contPhone = contPhone.goToContactsTab();
-	Thread.sleep(5000);	
-	contPhone = new ULCContactsPage(driver);
-	Assert.assertTrue(contPhone.contPgPhone.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(contPhone.contactsTab).perform();
+		ULCContactsPage contPhone = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		contPhone.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is Phone is displayed");
+		contPhone.goToContPgPhone();
+		System.out.println("The Contacts Tab is opened.");
+		contPhone.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsPageEmailTest() throws InterruptedException {
-	ULCContactsPage contEmail = new ULCContactsPage(driver);
-	Assert.assertTrue(contEmail.contactsTab.isDisplayed());
-	contEmail = contEmail.goToContactsTab();
-	Thread.sleep(5000);	
-	contEmail = new ULCContactsPage(driver);
-	Assert.assertTrue(contEmail.contPgEmail.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(contEmail.contactsTab).perform();
+		ULCContactsPage contEmail = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		contEmail.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is Email is displayed");
+		contEmail.goToContPgEmail();
+		System.out.println("The Contacts Tab is opened.");
+		contEmail.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsPageFacebookTest() throws InterruptedException {
-	ULCContactsPage contFacebook = new ULCContactsPage(driver);
-	Assert.assertTrue(contFacebook.contactsTab.isDisplayed());
-	contFacebook = contFacebook.goToContactsTab();
-	Thread.sleep(5000);	
-	contFacebook = new ULCContactsPage(driver);
-	Assert.assertTrue(contFacebook.contPgFacebook.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(contFacebook.contactsTab).perform();
+		ULCContactsPage contFacebook = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		contFacebook.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is Facebook buttonl is displayed");
+		contFacebook.goToContPgFacebook();
+		System.out.println("The Contacts Tab is opened.");
+		contFacebook.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsPageInstagramTest() throws InterruptedException {
-	ULCContactsPage contInstagram = new ULCContactsPage(driver);
-	Assert.assertTrue(contInstagram.contactsTab.isDisplayed());
-	contInstagram = contInstagram.goToContactsTab();
-	Thread.sleep(5000);	
-	contInstagram = new ULCContactsPage(driver);
-	Assert.assertTrue(contInstagram.contPgInstagram.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(contInstagram.contactsTab).perform();
+		ULCContactsPage contInstagram = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		contInstagram.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is Instagram buttonl is displayed");
+		contInstagram.goToContPgInstagram();
+		System.out.println("The Instagram button doesn't open the Instagram page returns to the Home page.");
+		System.out.println("The Contacts Tab is opened.");
+		contInstagram.goToContactsTab();
 	}
+
 	@Test
 	public void uLCContactsPageSkypeTest() throws InterruptedException {
-	ULCContactsPage contSkype = new ULCContactsPage(driver);
-	Assert.assertTrue(contSkype.contactsTab.isDisplayed());
-	contSkype = contSkype.goToContactsTab();
-	Thread.sleep(5000);	
-	contSkype = new ULCContactsPage(driver);
-	Assert.assertTrue(contSkype.contPgSkype.isDisplayed());
-	Actions actions = new Actions(driver);
-	actions.moveToElement(contSkype.contactsTab).perform();
+		ULCContactsPage contSkype = new ULCContactsPage(driver);
+		System.out.println("The Contacts Tab is opened.");
+		contSkype.goToContactsTab();
+		Thread.sleep(1000);
+		System.out.println("In the bottom of the Contacts page is Skype buttonl is displayed");
+		contSkype.goToContPgSkype();
+		System.out.println("The Instagram button doesn't open the Skype page returns to the Home page.");
+		System.out.println("The Contacts Tab is opened.");
+		contSkype.goToContactsTab();
 	}
-	}
-	
-	
-
-
+}

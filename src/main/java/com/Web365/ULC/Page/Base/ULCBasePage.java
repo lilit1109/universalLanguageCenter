@@ -1,6 +1,7 @@
 package com.Web365.ULC.Page.Base;
 
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -16,11 +17,11 @@ protected WebDriver driver;
 
 }
 	public void moveToElement(WebElement element) {
-		Actions action = new Actions(driver);
-		action.moveToElement(element).click();
-		action.build().perform();
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element).click();
+		actions.build().perform();
 	}
-	
+
 }
 	
 	

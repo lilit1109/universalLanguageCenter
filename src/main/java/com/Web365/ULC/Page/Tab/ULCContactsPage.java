@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import com.Web365.ULC.Page.Home.ULCHomePage;
+
 import static com.Web365.ULC.Page.Tab.ULCContactPageConstants.*;
 
 public class ULCContactsPage extends ULCHomePage {
@@ -20,10 +21,10 @@ public class ULCContactsPage extends ULCHomePage {
 
 	@FindBy(xpath = CONTACTS_PAGE_NAME_INPUT_XPATH)
 	public WebElement inputName;
-	
+
 	@FindBy(xpath = CONTACTS_PAGE_EMAIL_INPUT_XPATH)
 	public WebElement inputEmail;
-	
+
 	@FindBy(xpath = CONTACTS_PAGE_PHONE_INPUT_XPATH)
 	public WebElement inputPhoneNum;
 
@@ -38,8 +39,7 @@ public class ULCContactsPage extends ULCHomePage {
 
 	@FindBy(xpath = CONTACTS_PAGE_SUMMARY_ERRORS_XPATH)
 	public WebElement summaryErrors;
-	
-	
+
 	@FindBy(xpath = CONTACTS_PAGE_MAP_PAGE_XPATH)
 	public WebElement contactsPageMap;
 	@FindBy(xpath = CONTACTS_PAGE_MAP_PLACE_CARD_XPATH)
@@ -47,28 +47,28 @@ public class ULCContactsPage extends ULCHomePage {
 
 	@FindBy(xpath = CONTACTS_PAGE_MAP_PLACE_CARD_DIRECTION_XPATH)
 	public WebElement placeCardDir;
-	
+
 	@FindBy(xpath = CONTACTS_PAGE_MAP_PLACE_CARD_REVIEW_XPATH)
 	public WebElement placeCardReview;
-	
+
 	@FindBy(xpath = CONTACTS_PAGE_REVIEW_PAGE_XPATH)
 	public WebElement reviewPage;
-	
+
 	@FindBy(xpath = REVIEW_PAGE_WRITE_REVIEW_PAGE_XPATH)
 	public WebElement writeReview;
-	
+
 	@FindBy(xpath = CONTACTS_PAGE_MAP_PLACE_CARD_VIEWLARGEMAP_XPATH)
 	public WebElement placeCardLargMap;
-	
+
 	@FindBy(xpath = CONTACTS_PAGE_GOOGLE_MAP_STARTING_POINT_BOX_XPATH)
 	public WebElement inputStartDir;
-	
+
 	@FindBy(xpath = CONTACTS_PAGE_GOOGLE_MAP_DASTINATION_BOX_XPATH)
 	public WebElement inputEndDir;
-	
+
 	@FindBy(xpath = CONTACTS_PAGE_MAP_SATELLITE_IMAGE_BATTON_XPATH)
 	public WebElement satelliteMap;
-	
+
 	@FindBy(xpath = CONTACTS_PAGE_ABOUTUS_INFO_XPATH)
 	public WebElement contPgAboutUs;
 	@FindBy(xpath = CONTACTS_PAGE_CATEGORIES_INFO_XPATH)
@@ -78,7 +78,7 @@ public class ULCContactsPage extends ULCHomePage {
 	@FindBy(xpath = CONTACTS_PAGE_CATEGORIES_ABOUTUS_XPATH)
 	public WebElement contPgCategAboutUs;
 	@FindBy(xpath = CONTACTS_PAGE_CATEGORIES_CORPPACKS_XPATH)
-	public WebElement contPgCatgCorpPacks;
+	public WebElement contPgCategCorpPacks;
 	@FindBy(xpath = CONTACTS_PAGE_CATEGORIES_INTERNEXAMS_XPATH)
 	public WebElement contPgCorpInternEx;
 	@FindBy(xpath = CONTACTS_PAGE_CATEGORIES_UNIKIDS_XPATH)
@@ -103,9 +103,9 @@ public class ULCContactsPage extends ULCHomePage {
 	public WebElement contPgInstagram;
 	@FindBy(xpath = CONTACTS_PAGE_SKYPE_XPATH)
 	public WebElement contPgSkype;
-	
+
 	public ULCContactsPage goToContacts() {
-		contactUs.click();
+		moveToElement(contactUs);
 		return new ULCContactsPage(this.driver);
 	}
 
@@ -113,10 +113,12 @@ public class ULCContactsPage extends ULCHomePage {
 		inputName.sendKeys(name);
 
 	}
+
 	public void fillEmail(String email) {
 		inputEmail.sendKeys(email);
 
 	}
+
 	public void fillPhoneNum(String phoneNum) {
 		inputPhoneNum.sendKeys(phoneNum);
 
@@ -128,155 +130,201 @@ public class ULCContactsPage extends ULCHomePage {
 	}
 
 	public ULCContactsPage goToSbmitbtn() {
-		sbmitBtn.click();
+		moveToElement(sbmitBtn);
 		return new ULCContactsPage(this.driver);
 
 	}
 
 	public ULCContactsPage goToContactInf() {
-		contactInf.click();
+		moveToElement(contactInf);
 		return new ULCContactsPage(this.driver);
 
 	}
 
 	public ULCContactsPage goToSummaryErrors() {
-		summaryErrors.click();
+		moveToElement(summaryErrors);
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToContactsPageMap() {
+		moveToElement(contactsPageMap);
 		contactsPageMap.click();
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToMapPlaceCard() {
-		mapPlaceCard.click();
+		moveToElement(mapPlaceCard);
+
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToPlaceCardDir() {
+		moveToElement(placeCardDir);
 		placeCardDir.click();
+		driver.get(
+				"https://www.google.com/maps/dir//Universe+Language+Centre+%2F+%C2%AB%D5%85%D5%B8%D6%82%D5%B6%D5%AB%D5%BE%D5%A5%D6%80%D5%BD%C2%BB+%D5%AC%D5%A5%D5%A6%D5%BE%D5%AB+%D5%AF%D5%A5%D5%B6%D5%BF%D6%80%D5%B8%D5%B6+49+2+Komitas+Ave+Yerevan+0051,+Armenia/@40.2080701,44.5168151,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x406abd3591ef889d:0x70a05b2a3e46b440!2m2!1d44.5168151!2d40.2080701");
+
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToPlaceCardReview() {
-		placeCardReview.click();
+		moveToElement(placeCardReview);
+		driver.get("http://www.ulc.am/Home/Contact");
 		return new ULCContactsPage(this.driver);
 
 	}
-	public ULCContactsPage goToPlaceCardLargMap() {
-		placeCardLargMap.click();
+
+	public ULCContactsPage goToPlaceCardLargMap() throws InterruptedException {
+		driver.get(
+				"https://www.google.com/maps/place/Universe+Language+Centre+%2F+%C2%AB%D5%85%D5%B8%D6%82%D5%B6%D5%AB%D5%BE%D5%A5%D6%80%D5%BD%C2%BB+%D5%AC%D5%A5%D5%A6%D5%BE%D5%AB+%D5%AF%D5%A5%D5%B6%D5%BF%D6%80%D5%B8%D5%B6/@40.208078,44.516816,16z/data=!4m5!3m4!1s0x0:0x70a05b2a3e46b440!8m2!3d40.2080701!4d44.5168151?hl=en-US");
+		Thread.sleep(4000);
+		driver.get("http://www.ulc.am/Home/Contact");
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public void fillStartDirection(String startDir) {
-		inputStartDir.sendKeys(startDir);	
+		driver.get(
+				"https://www.google.com/maps/dir//Universe+Language+Centre+%2F+%C2%AB%D5%85%D5%B8%D6%82%D5%B6%D5%AB%D5%BE%D5%A5%D6%80%D5%BD%C2%BB+%D5%AC%D5%A5%D5%A6%D5%BE%D5%AB+%D5%AF%D5%A5%D5%B6%D5%BF%D6%80%D5%B8%D5%B6+49+2+Komitas+Ave+Yerevan+0051,+Armenia/@40.2080701,44.5168151,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x406abd3591ef889d:0x70a05b2a3e46b440!2m2!1d44.5168151!2d40.2080701");
+		moveToElement(inputStartDir);
+		inputStartDir.sendKeys(startDir, Keys.ENTER);
 
 	}
-	public void fillEndDirection(String endDir) {
-		inputEndDir.sendKeys(endDir,Keys.ENTER);
+
+	public void fillEndDirection(String endDir) throws InterruptedException {
+		moveToElement(inputEndDir);
+		inputEndDir.sendKeys(endDir, Keys.ENTER);
+		Thread.sleep(2000);
+		driver.get("http://www.ulc.am/Home/Contact");
 
 	}
+
 	public ULCContactsPage goToSatelliteMap() {
+		moveToElement(satelliteMap);
 		satelliteMap.click();
 		return new ULCContactsPage(this.driver);
 
 	}
 
-	public ULCContactsPage goToReviewPage() {
-		reviewPage.click();
+	public void goToReviewPage() throws InterruptedException {
+		driver.get(
+				"https://www.google.com/search?hl=en-US&gl=us&q=49,+Universe+Language+Centre+/+%C2%AB%D5%85%D5%B8%D6%82%D5%B6%D5%AB%D5%BE%D5%A5%D6%80%D5%BD%C2%BB+%D5%AC%D5%A5%D5%A6%D5%BE%D5%AB+%D5%AF%D5%A5%D5%B6%D5%BF%D6%80%D5%B8%D5%B6,+2+Komitas+Ave,+Yerevan+0051,+Armenia&ludocid=8115586765513208896&lsig=AB86z5UQ506tdDz8mw2yPL_OsyuS&hl=en&gl=US#lrd=0x406abd3591ef889d:0x70a05b2a3e46b440,1");
+//		return new ULCContactsPage(this.driver);
+
+	}
+
+	public ULCContactsPage goToWriteReviewPage() throws InterruptedException {
+		moveToElement(writeReview);
+		driver.manage().window().maximize();
+		driver.get("http://www.ulc.am/Home/Contact");
 		return new ULCContactsPage(this.driver);
 
 	}
-	public ULCContactsPage goToWriteReviewPage() {
-		writeReview.click();
-		return new ULCContactsPage(this.driver);
 
-	}///////////////////////////////////////
 	public ULCContactsPage goToContPgAboutUs() {
-		contPgAboutUs.click();
+		moveToElement(contPgAboutUs);
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToContPgCategories() {
-		contPgCategories.click();
+		moveToElement(contPgCategories);
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToContPgCategHome() {
-		contPgCategHome.click();
+		moveToElement(contPgCategHome);
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToContPgCategAboutUs() {
-		contPgCategAboutUs.click();
+		moveToElement(contPgCategAboutUs);
 		return new ULCContactsPage(this.driver);
 
 	}
-	public ULCContactsPage goToContPgCatgCorpPacks() {
-		contPgCatgCorpPacks.click();
+
+	public ULCContactsPage goToContPgCategCorpPacks() {
+		moveToElement(contPgCategCorpPacks);
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToContPgCorpInternEx() {
-		contPgCorpInternEx.click();
+		moveToElement(contPgCorpInternEx);
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToContPgCategUniKids() {
-		contPgCategUniKids.click();
+		moveToElement(contPgCategUniKids);
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToContPgCategCourses() {
-		contPgCategCourses.click();
+		moveToElement(contPgCategCourses);
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToContPgCategNews() {
-		contPgCategNews.click();
+		moveToElement(contPgCategNews);
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToContPgCategContacts() {
-		contPgCategContacts.click();
+		moveToElement(contPgCategContacts);
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToContPgFollowUs() {
-		contPgFollowUs.click();
+		moveToElement(contPgFollowUs);
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToContPgAddress() {
-		contPgAddress.click();
+		moveToElement(contPgAddress);
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToContPgPhone() {
-		contPgPhone.click();
+		moveToElement(contPgPhone);
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToContPgEmail() {
-		contPgEmail.click();
+		moveToElement(contPgEmail);
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToContPgFacebook() {
-		contPgFacebook.click();
+		moveToElement(contPgFacebook);
 		return new ULCContactsPage(this.driver);
 
 	}
+
 	public ULCContactsPage goToContPgInstagram() {
-		contPgInstagram.click();
+		moveToElement(contPgInstagram);
 		return new ULCContactsPage(this.driver);
 
 	}
-	public ULCContactsPage goToCcontPgSkype() {
-		contPgSkype.click();
+
+	public ULCContactsPage goToContPgSkype() {
+		moveToElement(contPgSkype);
 		return new ULCContactsPage(this.driver);
 
 	}
-	
+
 }

@@ -68,7 +68,7 @@ public class ULCHomePageTab extends ULCHomePage {
 	public WebElement createAccForMySelf;
 
 	public ULCHomePageTab goToSignInPage() {
-		googleSignInPage.click();
+		moveToElement(googleSignInPage);
 		return new ULCHomePageTab(this.driver);
 	}
 
@@ -77,39 +77,41 @@ public class ULCHomePageTab extends ULCHomePage {
 	}
 
 	public ULCHomePageTab goToGermanLanguage() {
-		germLangImg.click();
+		moveToElement(germLangImg);
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToGermanText() {
+		moveToElement(germSpecPurpText);
 		germSpecPurpText.click();
 		return new ULCHomePageTab(this.driver);
 
 	}
 
 	public ULCHomePageTab goToCrAccForMySelf() {
-		createAccForMySelf.click();
+		moveToElement(createAccForMySelf);
 		return new ULCHomePageTab(this.driver);
 
 	}
 
 	public ULCHomePageTab goToRegisterBtn() {
-		registerBtn.click();
+		moveToElement(registerBtn);
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToTestPage() {
-		testPage.click();
+		moveToElement(testPage);
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToTestPageSignIn() {
+		moveToElement(testPageSignInBtn);
 		testPageSignInBtn.click();
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToSignInNextBtn() {
-		signPageNextBtn.click();
+		moveToElement(signPageNextBtn);
 		return new ULCHomePageTab(this.driver);
 	}
 
@@ -119,73 +121,77 @@ public class ULCHomePageTab extends ULCHomePage {
 	}
 
 	public ULCHomePageTab goToSignInCreateAccount() {
+		moveToElement(createAccountBtn);
 		createAccountBtn.click();
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToCoursesLang() {
-		youngLernersProg.click();
+		moveToElement(youngLernersProg);
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToCoursesImg() {
-		coursesImg.click();
+		moveToElement(coursesImg);
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToESPText() {
-		eSPText.click();
+		moveToElement(eSPText);
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToLangPage() {
-		langPage.click();
+		moveToElement(langPage);
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToRussLangImg() {
-		rusLangImg.click();
+		moveToElement(rusLangImg);
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToRussLangInf() {
-		rusLangInf.click();
+		moveToElement(rusLangInf);
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToHomePageUniKidsTab() {
+		moveToElement(uniKidsImg);
 		uniKidsImg.click();
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToUniKidsProg() {
-		uniKidsProg.click();
+		moveToElement(uniKidsProg);
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToPuzzleImg() {
-		puzzleImg.click();
+		moveToElement(puzzleImg);
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToPageImg() {
-		pageImg.click();
+		moveToElement(pageImg);
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToIntExamImg() {
+		moveToElement(intExamImg);
 		intExamImg.click();
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToCorpPackImg() {
-		corpPackImg.click();
+		moveToElement(corpPackImg);
 		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToAnimImgs() {
-		animImgs.click();
+		moveToElement(animImgs);
 		return new ULCHomePageTab(this.driver);
 	}
+
 
 }

@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 
 import com.Web365.ULC.Page.Home.ULCHomePage;
 import static com.Web365.ULC.Page.Tab.ULCIntesolWorldwidePageConstants.*;
+
+import java.util.ArrayList;
 public class ULCIntesolWorldwidePage extends ULCHomePage{
 
 	public ULCIntesolWorldwidePage(WebDriver driver) {
@@ -24,8 +26,12 @@ public class ULCIntesolWorldwidePage extends ULCHomePage{
 	
 	@FindBy(xpath = ESP_COURSES_XPATH)
 	public WebElement espCourses;
+	@FindBy(xpath = ESP_COURSES_PAGE_COURSES_XPATH)
+	public WebElement espCoursesPgCourses;
 	@FindBy(xpath = ENGLISH_FOR_ACADEMIC_PURPOSES_XPATH)
 	public WebElement engForAcadPurpose;
+	@FindBy(xpath = ENGLISH_FOR_ACADEMIC_PURPOSES_BUTTON_XPATH)
+	public WebElement engForAcadPurposeBtn;
 	@FindBy(xpath = CERTIFICATE_IN_ENGLISH_GRAMMAR_XPATH)
 	public WebElement certificateInEngGram;
 	@FindBy(xpath = CERTIFICATE_IN_ENGLISH_GRAMMAR_INFORMATION_XPATH)
@@ -39,51 +45,64 @@ public class ULCIntesolWorldwidePage extends ULCHomePage{
 	public WebElement engHospDownload;
 	
 	public ULCIntesolWorldwidePage goToTesolTeflCoursesPage() {
-		tesolTeflCourses.click();
+		moveToElement(tesolTeflCourses);
 		return new ULCIntesolWorldwidePage(this.driver);
 	}
 	public ULCIntesolWorldwidePage goToEngForHospDwldBtn() {
-		engHospDownload.click();
+		moveToElement(engHospDownload);
 		return new ULCIntesolWorldwidePage(this.driver);
 	}
 	public ULCIntesolWorldwidePage goToCertificateInTEFLImage() {
-		certificateInTEFLImage.click();
+		moveToElement(certificateInTEFLImage);
 		return new ULCIntesolWorldwidePage(this.driver);
 	}
 	public ULCIntesolWorldwidePage goToCertEngGramInf() {
-		engGramInf.click();
+		moveToElement(engGramInf);
 		return new ULCIntesolWorldwidePage(this.driver);
 	}
 	public ULCIntesolWorldwidePage goToCertificateInTEFL() {
-		certificateInTEFL.click();
+		moveToElement(certificateInTEFL);
 		return new ULCIntesolWorldwidePage(this.driver);
 	}
 	public ULCIntesolWorldwidePage goToDownloadBtn() {
-		downloadTEFLInfbtn.click();
+		moveToElement(downloadTEFLInfbtn);
 		return new ULCIntesolWorldwidePage(this.driver);
 	}
 	
 	public ULCIntesolWorldwidePage goToEsPCoursesPage() {
-		espCourses.click();
+		moveToElement(espCourses);
+		return new ULCIntesolWorldwidePage(this.driver);
+	}
+	public ULCIntesolWorldwidePage goToEsPCoursesPageCourses() {
+		moveToElement(espCoursesPgCourses);
 		return new ULCIntesolWorldwidePage(this.driver);
 	}
 	public ULCIntesolWorldwidePage goToEngForAcadPurpose() {
-		engForAcadPurpose.click();
+		moveToElement(engForAcadPurpose);
+		ArrayList<String> tabs= new ArrayList<String> (driver.getWindowHandles());
+	    driver.switchTo().window(tabs.get(1));
+		driver.close();
+	    driver.switchTo().window(tabs.get(0));
+		return new ULCIntesolWorldwidePage(this.driver);
+	}
+	public ULCIntesolWorldwidePage goToEngForAcadPurposeBtn() {
+		moveToElement(engForAcadPurposeBtn);
 		return new ULCIntesolWorldwidePage(this.driver);
 	}
 	public ULCIntesolWorldwidePage goToCertificateInEngGram() {
-		certificateInEngGram.click();
+		moveToElement(certificateInEngGram);
 		return new ULCIntesolWorldwidePage(this.driver);
 	}
 	public ULCIntesolWorldwidePage goToeEgForHospitality() {
-		engForHospitality.click();
+		moveToElement(engForHospitality);
 		return new ULCIntesolWorldwidePage(this.driver);
 	}
 	public ULCIntesolWorldwidePage goToeEgForHospInF() {
-		engForHospInF.click();
+		moveToElement(engForHospInF);
 		return new ULCIntesolWorldwidePage(this.driver);
 	}
 	public ULCIntesolWorldwidePage goToDownloadTEFLInfbtn() {
+		//moveToElement(downloadTEFLInfbtn);
 		downloadTEFLInfbtn.click();
 		return new ULCIntesolWorldwidePage(this.driver);
 	}

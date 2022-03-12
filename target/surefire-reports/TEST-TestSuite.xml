@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="741.12" tests="60" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\lilit\Desktop\Eclips\universalLanguageCenter\target\test-classes;C:\Users\lilit\Desktop\Eclips\universalLanguageCenter\target\classes;C:\Users\lilit\.m2\repository\org\testng\testng\7.5\testng-7.5.jar;C:\Users\lilit\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\lilit\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\lilit\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\lilit\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-java\4.1.1\selenium-java-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-api\4.1.1\selenium-api-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.1.1\selenium-chrome-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\lilit\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\lilit\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.1.1\selenium-chromium-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-json\4.1.1\selenium-json-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.1.1\selenium-devtools-v85-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v94\4.1.1\selenium-devtools-v94-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v95\4.1.1\selenium-devtools-v95-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v96\4.1.1\selenium-devtools-v96-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.1.1\selenium-edge-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.1.1\selenium-firefox-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.1.1\selenium-firefox-xpi-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.1.1\selenium-ie-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.1.1\selenium-opera-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.1.1\selenium-remote-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\io\netty\netty-buffer\4.1.70.Final\netty-buffer-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-codec-http\4.1.70.Final\netty-codec-http-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-codec\4.1.70.Final\netty-codec-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-handler\4.1.70.Final\netty-handler-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-common\4.1.70.Final\netty-common-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.70.Final\netty-transport-classes-epoll-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.70.Final\netty-transport-classes-kqueue-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.70.Final\netty-transport-native-unix-common-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-transport\4.1.70.Final\netty-transport-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-resolver\4.1.70.Final\netty-resolver-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-api\1.9.1\opentelemetry-api-1.9.1.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-context\1.9.1\opentelemetry-context-1.9.1.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.9.1\opentelemetry-exporter-logging-1.9.1.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.9.1-alpha\opentelemetry-sdk-metrics-1.9.1-alpha.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.9.1-alpha\opentelemetry-sdk-logs-1.9.1-alpha.jar;C:\Users\lilit\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar;C:\Users\lilit\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\lilit\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.9.1\opentelemetry-sdk-common-1.9.1.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.9.1\opentelemetry-sdk-extension-autoconfigure-spi-1.9.1.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.9.1-alpha\opentelemetry-sdk-extension-autoconfigure-1.9.1-alpha.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.9.1\opentelemetry-sdk-trace-1.9.1.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-api-metrics\1.9.1-alpha\opentelemetry-api-metrics-1.9.1-alpha.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.9.1\opentelemetry-sdk-1.9.1.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.9.1-alpha\opentelemetry-semconv-1.9.1-alpha.jar;C:\Users\lilit\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\lilit\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\lilit\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\lilit\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\lilit\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\lilit\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\lilit\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\lilit\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-http\4.1.1\selenium-http-4.1.1.jar;C:\Users\lilit\.m2\repository\net\jodah\failsafe\2.4.4\failsafe-2.4.4.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.1.1\selenium-safari-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-support\4.1.1\selenium-support-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-server\3.141.59\selenium-server-3.141.59.jar;C:\Users\lilit\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\lilit\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\lilit\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\lilit\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\lilit\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\lilit\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\lilit\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\lilit\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830\jetty-repacked-9.4.12.v20180830.jar;C:\Users\lilit\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\lilit\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\lilit\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\lilit\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\lilit\AppData\Local\Temp\surefire3101784944000374119\surefirebooter4478576041987406375.jar C:\Users\lilit\AppData\Local\Temp\surefire3101784944000374119 2022-03-11T16-32-17_315-jvmRun1 surefire1023075863095817747tmp surefire_0313971201057823493tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\lilit\Desktop\Eclips\universalLanguageCenter\target\test-classes;C:\Users\lilit\Desktop\Eclips\universalLanguageCenter\target\classes;C:\Users\lilit\.m2\repository\org\testng\testng\7.5\testng-7.5.jar;C:\Users\lilit\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\lilit\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\lilit\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\lilit\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-java\4.1.1\selenium-java-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-api\4.1.1\selenium-api-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.1.1\selenium-chrome-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\lilit\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\lilit\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.1.1\selenium-chromium-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-json\4.1.1\selenium-json-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.1.1\selenium-devtools-v85-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v94\4.1.1\selenium-devtools-v94-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v95\4.1.1\selenium-devtools-v95-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v96\4.1.1\selenium-devtools-v96-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.1.1\selenium-edge-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.1.1\selenium-firefox-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.1.1\selenium-firefox-xpi-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.1.1\selenium-ie-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.1.1\selenium-opera-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.1.1\selenium-remote-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\io\netty\netty-buffer\4.1.70.Final\netty-buffer-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-codec-http\4.1.70.Final\netty-codec-http-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-codec\4.1.70.Final\netty-codec-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-handler\4.1.70.Final\netty-handler-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-common\4.1.70.Final\netty-common-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.70.Final\netty-transport-classes-epoll-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.70.Final\netty-transport-classes-kqueue-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.70.Final\netty-transport-native-unix-common-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-transport\4.1.70.Final\netty-transport-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-resolver\4.1.70.Final\netty-resolver-4.1.70.Final.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-api\1.9.1\opentelemetry-api-1.9.1.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-context\1.9.1\opentelemetry-context-1.9.1.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.9.1\opentelemetry-exporter-logging-1.9.1.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.9.1-alpha\opentelemetry-sdk-metrics-1.9.1-alpha.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.9.1-alpha\opentelemetry-sdk-logs-1.9.1-alpha.jar;C:\Users\lilit\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar;C:\Users\lilit\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\lilit\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.9.1\opentelemetry-sdk-common-1.9.1.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.9.1\opentelemetry-sdk-extension-autoconfigure-spi-1.9.1.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.9.1-alpha\opentelemetry-sdk-extension-autoconfigure-1.9.1-alpha.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.9.1\opentelemetry-sdk-trace-1.9.1.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-api-metrics\1.9.1-alpha\opentelemetry-api-metrics-1.9.1-alpha.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.9.1\opentelemetry-sdk-1.9.1.jar;C:\Users\lilit\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.9.1-alpha\opentelemetry-semconv-1.9.1-alpha.jar;C:\Users\lilit\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\lilit\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\lilit\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\lilit\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\lilit\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\lilit\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\lilit\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\lilit\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\lilit\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-http\4.1.1\selenium-http-4.1.1.jar;C:\Users\lilit\.m2\repository\net\jodah\failsafe\2.4.4\failsafe-2.4.4.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.1.1\selenium-safari-driver-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-support\4.1.1\selenium-support-4.1.1.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\selenium-server\3.141.59\selenium-server-3.141.59.jar;C:\Users\lilit\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\lilit\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\lilit\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\lilit\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\lilit\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\lilit\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\lilit\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\lilit\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\lilit\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830\jetty-repacked-9.4.12.v20180830.jar;C:\Users\lilit\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\lilit\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\lilit\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\lilit\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\lilit"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_161\jre"/>
+    <property name="basedir" value="C:\Users\lilit\Desktop\Eclips\universalLanguageCenter"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\lilit\AppData\Local\Temp\surefire3101784944000374119\surefirebooter4478576041987406375.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_161-b12"/>
+    <property name="user.name" value="lilit"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="sun.nio.ch.bugLevel" value=""/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\lilit\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\lilit\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_161"/>
+    <property name="user.dir" value="C:\Users\lilit\Desktop\Eclips\universalLanguageCenter"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\lilit\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\apache-maven-3.8.4\bin;C:\Users\lilit\AppData\Local\GitHubDesktop\bin;C:\ProgramData\lilit\GitHubDesktop\bin;;C:\Users\lilit\Desktop;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.161-b12"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="universalLanguageCenterPageTest" classname="com.Web365.ULC.Tab.Test.ULCTabTest" time="25.161">
+    <system-out><![CDATA[Go to the ULC page, find the ULC Logo and click on it.
+Make sure the homepage is opened and tabs is displayed.
+Click on the Home tab.
+Click on the AboutUs tab.
+Click on the Corporate Packs tab.
+Click on the International Exam tab.
+Click on the Intesol Worldwide tab.
+Click on the Courses tab.
+Click on the Contacts tab.
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 51625
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1647034341.510][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+Mar 11, 2022 4:32:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 11, 2022 4:32:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 96
+Mar 11, 2022 4:32:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="uLCPageBookNowTest" classname="com.Web365.ULC.Tab.Test.ULCTabTest" time="28.131">
+    <system-out><![CDATA[Make sure that the Book Now button is displayed and click on it.
+Click in the Courses box and select the course.
+Click in the Trainings box and select the Training hours.
+Click in the Make a payment button and open the new page.
+Type and fill the personal information field.
+Click on the Next button and open the page for checkout
+Click on the Checkout button and make a payment.
+Return to the Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCHomePageRegisterTest" classname="com.Web365.ULC.Tab.Test.ULCHomeTabPageTest" time="15.874">
+    <system-out><![CDATA[Go to the Home page, find the Register button and click on it.
+Switch to the new page.
+Click on the Sign-in blue string and open for sign-in page.
+Switch to the new page.
+Make sure that the Google Sign-in page is opened.
+On the Google Sign-in page, type and fill in the personal information on the field.
+Click on the Next button.
+Click on the Create Account button.
+Click on the Create Account for My Self button.
+Switch to the home page.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 55679
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1647034406.496][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+Mar 11, 2022 4:33:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 11, 2022 4:33:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 96
+Mar 11, 2022 4:33:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="uLCHomePageCoursesTest" classname="com.Web365.ULC.Tab.Test.ULCHomeTabPageTest" time="9.573">
+    <system-out><![CDATA[The Home page is opened, and the Courses Image is displayed.
+Click on the Courses image and make sure the Courses Language is displayed.
+The Courses Language Information is opened. Make sure the ESP information is displayed.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCCoursesGermanLanguageTest" classname="com.Web365.ULC.Tab.Test.ULCHomeTabPageTest" time="6.296">
+    <system-out><![CDATA[The Courses Language page is opened.
+Go to the German language image on the Courses Language page and click on it.
+Make sure that the german specific purpose text is displayed.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCCoursesRussianLanguageTest" classname="com.Web365.ULC.Tab.Test.ULCHomeTabPageTest" time="14.469">
+    <system-out><![CDATA[The Courses Language page is opened.
+Go to the Russian language image on the Courses Language page and click on it.
+Make sure that the german specific purpose text is displayed.
+Return to the Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCHomePageUniKidsTest" classname="com.Web365.ULC.Tab.Test.ULCHomeTabPageTest" time="9.412">
+    <system-out><![CDATA[The Home page is opened, and the UniKids Image is displayed.
+UniKids page is opened and the UniKids program is displayed.
+The UniKids page Image is  displayed.
+The UniKids page puzzle Image is  displayed.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCHomePageIntExamTest" classname="com.Web365.ULC.Tab.Test.ULCHomeTabPageTest" time="8.241">
+    <system-out><![CDATA[The Home page is opened, and the International Exam Image is displayed.
+Click in the International Exam Image and open the page.
+The International Exam page is opendand German page image is displayed.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCHomePageCorpPackTest" classname="com.Web365.ULC.Tab.Test.ULCHomeTabPageTest" time="10.229">
+    <system-out><![CDATA[The Home page is displayed.
+Click in the Corporate Packs Image and open the page.
+The Corporate Packs page is opendand and animated images are displayed.
+Return the Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCHomePageAboutUsAboutUsTest" classname="com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest" time="21.579">
+    <system-out><![CDATA[The Home page is opened and About Us is displayed
+The About Us menu is opened and About Us button is displayed
+Make sure that the About us page Image  is displayed
+Make sure that the About us page text is displayed
+Make sure that the About us page instagram button is displayed
+The button doesn't work
+Return to the Home page
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 56531
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1647034490.971][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+Mar 11, 2022 4:34:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 11, 2022 4:34:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 96
+Mar 11, 2022 4:34:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="uLCHomePageAboutUsStaffTest" classname="com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest" time="11.119">
+    <system-out><![CDATA[The About Us menu is opened
+The About Us menu is opened and Staff button is displayed
+AboutUS Staff tab button doesn't react to the action
+]]></system-out>
+  </testcase>
+  <testcase name="uLCHomePageAboutUsVacancyTest" classname="com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest" time="19.2">
+    <system-out><![CDATA[The About Us menu is opened
+The About Us menu is opened and Vacancy button is displayed
+The Vacancy page  is opened and Download button is displayed
+Click on the Download button and switch to new page and open the PDF documentation
+]]></system-out>
+  </testcase>
+  <testcase name="uLCHomePageAboutUsGalleryTest" classname="com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest" time="18.891">
+    <system-out><![CDATA[The About Us menu is opened
+The About Us menu is opened and Gallery button is displayed
+Click on the Gallery image
+Return to the Home Tab
+]]></system-out>
+  </testcase>
+  <testcase name="uLCGalleryImagesTest" classname="com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest" time="33.547">
+    <system-out><![CDATA[The Gallery page is opened and images are displayed
+Click in the image full screen batton
+Click in the right arrow batton and change the images
+Click in the left arrow batton and change the images
+Click in the page close batton and return to the About us Gallery page
+Click in the next arrow batton and change the images
+Click in the right arrow batton and change the images
+Return to the Home Tab
+]]></system-out>
+  </testcase>
+  <testcase name="uLCHomePageCorpPacksTest" classname="com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest" time="17.328">
+    <system-out><![CDATA[Make sure that the Home page is opened and move to Corporate Packs and click on it.
+The Corporate Packs page opened and PDF file is displayed.
+Return to the Corporate Packs tab.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 55092
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1647034607.348][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+Mar 11, 2022 4:36:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 11, 2022 4:36:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 96
+Mar 11, 2022 4:36:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="uLCHomePageCorpPacksPdfTest" classname="com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest" time="11.371">
+    <system-out><![CDATA[PDF is displayed, click on it.
+Switch to the new page
+Click on close button and close the page.
+Return to the Home page
+]]></system-out>
+  </testcase>
+  <testcase name="uLCHomePageCorpPacksSlideMapTest" classname="com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest" time="10.395">
+    <system-out><![CDATA[In The Menu tab, the Home tab page has a Corporation pack function that has the same functions as the Menu Tab Corporation pack tab function.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCInternExamTabTest" classname="com.Web365.ULC.Tab.Test.ULCInternExamTabPageTest" time="15.36">
+    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 60255
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1647034657.225][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+Mar 11, 2022 4:37:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 11, 2022 4:37:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 96
+Mar 11, 2022 4:37:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="uLCIntesolWorldTPageTest" classname="com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest" time="9.384">
+    <system-out><![CDATA[The Home page is opened, find and click on the Intesol Worldwide
+The Intesol Worldwide menu is opened and  go to the TOSL/TEFL/Courses button and click on it
+Click to the TOSL/TEFL/Courses and find Certificate  In TEFL
+Click in the Certificate  In TEFL Image
+Click to the Certificate In TEFL download button
+Return to the Intesol Worldwide Tab
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 62704
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1647034682.678][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+Mar 11, 2022 4:38:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 11, 2022 4:38:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 96
+Mar 11, 2022 4:38:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="uLCIntesolWorldESPPageTest" classname="com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest" time="19.369">
+    <system-out><![CDATA[The Home page is opened, find and click on the Intesol Worldwide
+The Intesol Worldwide menu is opened and  go to the ESP/Courses button and click on it
+Open the ESP/Courses page and makesure the Courses menu is displayed
+]]></system-out>
+  </testcase>
+  <testcase name="uLCESPEnglishForAcademicPurposeTest" classname="com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest" time="6.369">
+    <system-out><![CDATA[Click to the ESP/Courses and find English For Academic Purpose
+Click on the English For Academic Purpose download button and open the new page
+]]></system-out>
+  </testcase>
+  <testcase name="uLCEforAPCertificateEnglishGrammar" classname="com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest" time="3.7">
+    <system-out><![CDATA[Click to the ESP/Courses and find English For Academic Purpose
+Click to the ESP/Courses and find Certificate English Grammar Information
+The Certificate for English Grammar Information is displayed
+]]></system-out>
+  </testcase>
+  <testcase name="uLCESPEnglishForHospitality" classname="com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest" time="5.495">
+    <system-out><![CDATA[Click to the ESP/Courses and find English For Hospitality
+In the English For Hospitality page click on the download button
+Return to the Intesol Worldwide Tab
+]]></system-out>
+  </testcase>
+  <testcase name="uLCCoursesTabLangPageTest" classname="com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest" time="7.976">
+    <system-out><![CDATA[The Home page is open, and Courses Tab is displayed.
+The Courses Tab menu is opened and Language tab is opened.
+Return to the Courses Tab.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 49938
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1647034737.315][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+Mar 11, 2022 4:38:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 11, 2022 4:38:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 96
+Mar 11, 2022 4:38:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="uLCCoursesTabUniKidsPageTest" classname="com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest" time="2.532">
+    <system-out><![CDATA[The Home page is open, and Courses Tab is displayed.
+The Courses Menu is opened and UniKids is displayed.
+Return to the Courses Tab.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCCoursesTabUniKidsEnglishTabTest" classname="com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest" time="4.76">
+    <system-out><![CDATA[The Home page is open, and Courses Tab is displayed.
+The UniKids Menu is opened.
+The UniKids Menu is opened and  English tab is displayed.
+Return to the Courses Tab.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCCoursesTabUniKidsGermanTabTest" classname="com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest" time="5.936">
+    <system-out><![CDATA[The Home page is open, and Courses Tab is displayed.
+The UniKids Menu is opened.
+The UniKids Menu is opened and  German tab is displayed.
+Return to the Courses Tab.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCCoursesTabUniKidsFrenchTabTest" classname="com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest" time="3.12">
+    <system-out><![CDATA[The Home page is open, and Courses Tab is displayed.
+The UniKids Menu is opened.
+The UniKids Menu is opened and  French tab is displayed.
+Return to the Courses Tab.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCCoursesTabLevelsPageTest" classname="com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest" time="4.938">
+    <system-out><![CDATA[The Home page is open, and Courses Tab is displayed.
+The Courses Menu is opened and Levels tab is displayed.
+Return to the Courses Tab.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCCoursesTabTariffsPageTest" classname="com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest" time="4.801">
+    <system-out><![CDATA[The Home page is open, and Courses Tab is displayed.
+The Courses Menu is opened and Tariffs tab is displayed.
+Return to the Courses Tab.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCCoursesTabSeminarsPageTest" classname="com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest" time="2.819">
+    <system-out><![CDATA[The Home page is open, and Courses Tab is displayed.
+The Courses Menu is opened and Seminars tab is displayed.
+Return to the Courses Tab.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCCoursesTabNewsPageTest" classname="com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest" time="5.865">
+    <system-out><![CDATA[The Home page is open, and Courses Tab is displayed.
+The Courses Menu is opened and News tab is displayed.
+Return to the Courses Tab.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsTabPageTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="7.42">
+    <system-out><![CDATA[The Home page is opened and Contacts Tab is displayed.
+The Contacts Page opened and Contacts information is displayed.
+Return to the Contacts tab.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 57844
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1647034792.553][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+Mar 11, 2022 4:39:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 11, 2022 4:39:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 96
+Mar 11, 2022 4:39:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="uLCContactsPersonalInfoPageTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="4.616">
+    <system-out><![CDATA[The Home page is opened and Contacts Tab is displayed.
+The Contacts Page opened and personal information is displayed.
+Return to the Contacts tab.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCPersonalInfoNameFieldTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="13.869">
+    <system-out><![CDATA[The Contacts Tab is opened and personal information page is opened.
+Type the Name in the personal information name field.
+Click on the Submit button.
+Ensure that the Summary Error is displayed, and Email, Phone, and Message fields are required.
+Return to the Contacts tab.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCPersonalInfoEmailFieldTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="13.899">
+    <system-out><![CDATA[Ensure that the Contacts Tab is opened and personal information page is opened.
+Type the Email address in the personal information Email field.
+Click on the Submit button.
+Ensure that the Summary Error is displayed, and Name, Phone and Message fields are required.
+Return to the Contacts tab.
+Ensure that the validation does not check and ignore that the email format.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCPersonalInfoPhoneFieldTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="13.616">
+    <system-out><![CDATA[Ensure that the Contacts Tab is opened and personal information page is opened.
+Type the Phone Number in the personal information Phone Number field.
+Click on the Submit button.
+Ensure that the Summary Error is displayed, and Name, Phone and Email fields are required.
+Return to the Contacts tab.
+Ensure that the validation does not check for only numeric requirements and ignores the digit requirements
+]]></system-out>
+  </testcase>
+  <testcase name="uLCPersonalInfoMessageFieldTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="12.18">
+    <system-out><![CDATA[Ensure that the Contacts Tab is opened and personal information page is opened.
+Type the Message in the personal information Message field.
+Click on the Submit button.
+Ensure that the Summary Error is displayed, and Name, Phone and Email fields are required.
+Return to the Contacts tab.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCPersonalInfoSubmitTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="19.898">
+    <system-out><![CDATA[Ensure that the Contacts Tab is opened and personal information page is opened.
+Type the Name in the personal information name field.
+Type the Email address in the personal information Email field.
+Type the Phone Number in the personal information Phone Number field.
+Type the Message in the personal information Message field.
+Click on the Submit button.
+All fields are filled
+Ensure that the application did not send a message and returned to the home page
+Return to the Contacts tab.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsPageMapTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="7.385">
+    <system-out><![CDATA[The Contacts Tab is opened.
+The Contacts Tab is opened and Contacts Page Map is displayed
+Ensure that the Contacts tab is displayed.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsPageMapDirectionTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="16.147">
+    <system-out><![CDATA[The Contacts Tab is opened.
+The Contacts Tab is opened and Contacts Page Map is displayed
+The Contacts Page Map is opened and Direction is displayed
+Type the Start direction
+Type the End direction
+Ensure that the direction is displayed
+Return to the Contacts tab.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCPagePlaceCardReviewTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="20.673">
+    <system-out><![CDATA[The Contacts Tab is opened.
+The Contacts Tab is opened and Contacts Page Map is displayed
+The Contacts Page Map Review window is opened
+Review window is opened and WriteReview is displayed
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCPageViewLargeMapTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="20.049">
+    <system-out><![CDATA[The Contacts Tab is opened.
+The Contacts Tab is opened and Contacts Page Map is displayed
+The Contacts page map is displayed and large map is opened in new window.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsPageAboutUsTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="6.318">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is AboutUs is displayed
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsPageCategoriesTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="4.573">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is Categories is displayed
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsCategoriesHomeTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="5.255">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is Home is displayed
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsCategoriesAboutUSTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="5.634">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is AboutUs is displayed
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsCategoriesCorpPacksTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="6.492">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is Corporate Packs is displayed
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsCategoriesInternExamTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="6.321">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is International Exam is displayed
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsCategoriesUniKidsTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="7.453">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is UniKids is displayed
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsCategoriesCoursesTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="6.834">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is Courses is displayed
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsCategoriesNewsTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="6.641">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is News is displayed
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsCategoriesContactsTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="5.72">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is Contacts is displayed
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsPageFollowUsTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="4.892">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is Follow us is displayed
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsPageAddressTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="4.787">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is Address is displayed
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsPagePhoneTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="4.62">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is Phone is displayed
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsPageEmailTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="7.082">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is Email is displayed
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsPageFacebookTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="8.099">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is Facebook buttonl is displayed
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsPageInstagramTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="18.163">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is Instagram buttonl is displayed
+The Instagram button doesn't open the Instagram page returns to the Home page.
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+  <testcase name="uLCContactsPageSkypeTest" classname="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest" time="17.536">
+    <system-out><![CDATA[The Contacts Tab is opened.
+In the bottom of the Contacts page is Skype buttonl is displayed
+The Instagram button doesn't open the Skype page returns to the Home page.
+The Contacts Tab is opened.
+]]></system-out>
+  </testcase>
+</testsuite>

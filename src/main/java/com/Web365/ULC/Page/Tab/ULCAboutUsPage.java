@@ -51,16 +51,34 @@ public class ULCAboutUsPage extends ULCHomePage {
 	public WebElement closeBtn;
 
 	public ULCAboutUsPage goToAboutUsStaff() {
-		aboutUsStaff.click();
+		moveToElement(aboutUsStaff);
 		return new ULCAboutUsPage(this.driver);
 	}
 
-	public ULCAboutUsPage goToRightArrowBatton() {
+	public ULCAboutUsPage goToRightArrowBatton() throws InterruptedException {
+		moveToElement(rightArrowBtn);
+		rightArrowBtn.click();
+		Thread.sleep(1000);
+		rightArrowBtn.click();
+		Thread.sleep(1000);
+		rightArrowBtn.click();
+		Thread.sleep(1000);
+		rightArrowBtn.click();
+		Thread.sleep(1000);
 		rightArrowBtn.click();
 		return new ULCAboutUsPage(this.driver);
 	}
 
-	public ULCAboutUsPage goToLeftArrowBatton() {
+	public ULCAboutUsPage goToLeftArrowBatton() throws InterruptedException {
+		moveToElement(leftArrowBtn);
+		leftArrowBtn.click();
+		Thread.sleep(1000);
+		leftArrowBtn.click();
+		Thread.sleep(1000);
+		leftArrowBtn.click();
+		Thread.sleep(1000);
+		leftArrowBtn.click();
+		Thread.sleep(1000);
 		leftArrowBtn.click();
 		return new ULCAboutUsPage(this.driver);
 	}
@@ -71,7 +89,7 @@ public class ULCAboutUsPage extends ULCHomePage {
 	}
 
 	public ULCAboutUsPage goToFullScreenBtn() {
-		fullScrBtn.click();
+		moveToElement(fullScrBtn);
 		return new ULCAboutUsPage(this.driver);
 	}
 
@@ -81,53 +99,76 @@ public class ULCAboutUsPage extends ULCHomePage {
 	}
 
 	public ULCAboutUsPage goToCloseBtn() {
-		closeBtn.click();
+		moveToElement(closeBtn);
 		return new ULCAboutUsPage(this.driver);
 	}
 
-	public ULCAboutUsPage goToNextImg() {
+	public ULCAboutUsPage goToNextImg() throws InterruptedException {
+		moveToElement(imgNextBtn);
 		imgNextBtn.click();
+		Thread.sleep(1000);
+		imgNextBtn.click();
+		Thread.sleep(1000);
+		imgNextBtn.click();
+		Thread.sleep(1000);
+		imgNextBtn.click();
+		Thread.sleep(1000);
+		imgNextBtn.click();
+		Thread.sleep(1000);
 		return new ULCAboutUsPage(this.driver);
 	}
 
-	public ULCAboutUsPage goToPrevImg() {
-		imgNextBtn.click();
+	public ULCAboutUsPage goToPrevImg() throws InterruptedException {
+		moveToElement(imgPrevBtn);
+		imgPrevBtn.click();
+		Thread.sleep(1000);
+		imgPrevBtn.click();
+		Thread.sleep(1000);
+		imgPrevBtn.click();
+		Thread.sleep(1000);
+		imgPrevBtn.click();
+		Thread.sleep(1000);
+		imgPrevBtn.click();
+		Thread.sleep(1000);
 		return new ULCAboutUsPage(this.driver);
 	}
 
 	public ULCAboutUsPage goToAboutUsVacancy() {
-		aboutUsVacancy.click();
+		moveToElement(aboutUsVacancy);
 		return new ULCAboutUsPage(this.driver);
 	}
 
 	public ULCAboutUsPage goToVacancyDldBtn() {
-		vacancyDldBtn.click();
+		moveToElement(vacancyDldBtn);
 		return new ULCAboutUsPage(this.driver);
 	}
 
 	public ULCAboutUsPage goToAboutUsGallery() {
-		aboutUsGallery.click();
+		moveToElement(aboutUsGallery);
 		return new ULCAboutUsPage(this.driver);
 	}
 
 	public ULCAboutUsPage goToAboutUsAboutUs() {
-		aboutUsAboutUs.click();
+		moveToElement(aboutUsAboutUs);
 		return new ULCAboutUsPage(this.driver);
 	}
 
 	public ULCAboutUsPage goToAboutUsPageImg() {
-		aboutUsPageImg.click();
+		moveToElement(aboutUsPageImg);
 		return new ULCAboutUsPage(this.driver);
 	}
 
 	public ULCAboutUsPage goToAboutUsText() {
-		aboutUsText.click();
+		moveToElement(aboutUsText);
 		return new ULCAboutUsPage(this.driver);
 	}
 
 	public ULCAboutUsPage goToInsBtn() {
-		instBtn.click();
+		moveToElement(instBtn);
 		return new ULCAboutUsPage(this.driver);
 	}
-
+	public ULCAboutUsPage goToGalleryImage() {
+		moveToElement(galleryImg);
+		return new ULCAboutUsPage(this.driver);
+}
 }

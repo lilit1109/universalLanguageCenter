@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="60" passed="60">
+  <reporter-output>
+  </reporter-output>
+  <suite name="ULC Regression suite" duration-ms="740284" started-at="2022-03-11T16:32:18 EST" finished-at="2022-03-11T16:44:39 EST">
+    <groups>
+    </groups>
+    <test name="ULC Tab Test" duration-ms="740284" started-at="2022-03-11T16:32:18 EST" finished-at="2022-03-11T16:44:39 EST">
+      <class name="com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest">
+        <test-method status="PASS" signature="openUCLPage()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest@63440df3]" name="openUCLPage" is-config="true" duration-ms="5022" started-at="2022-03-11T16:36:46 EST" finished-at="2022-03-11T16:36:51 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUCLPage -->
+        <test-method status="PASS" signature="uLCHomePageCorpPacksTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest@63440df3]" name="uLCHomePageCorpPacksTest" duration-ms="17337" started-at="2022-03-11T16:36:51 EST" finished-at="2022-03-11T16:37:08 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCHomePageCorpPacksTest -->
+        <test-method status="PASS" signature="uLCHomePageCorpPacksPdfTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest@63440df3]" name="uLCHomePageCorpPacksPdfTest" duration-ms="11369" started-at="2022-03-11T16:37:08 EST" finished-at="2022-03-11T16:37:19 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCHomePageCorpPacksPdfTest -->
+        <test-method status="PASS" signature="uLCHomePageCorpPacksSlideMapTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest@63440df3]" name="uLCHomePageCorpPacksSlideMapTest" duration-ms="10394" started-at="2022-03-11T16:37:19 EST" finished-at="2022-03-11T16:37:30 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCHomePageCorpPacksSlideMapTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest@63440df3]" name="tearDown" is-config="true" duration-ms="5763" started-at="2022-03-11T16:37:30 EST" finished-at="2022-03-11T16:37:36 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest -->
+      <class name="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest">
+        <test-method status="PASS" signature="openUCLPage()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="openUCLPage" is-config="true" duration-ms="5695" started-at="2022-03-11T16:39:51 EST" finished-at="2022-03-11T16:39:57 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUCLPage -->
+        <test-method status="PASS" signature="uLCContactsTabPageTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsTabPageTest" duration-ms="7423" started-at="2022-03-11T16:39:57 EST" finished-at="2022-03-11T16:40:04 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsTabPageTest -->
+        <test-method status="PASS" signature="uLCContactsPersonalInfoPageTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsPersonalInfoPageTest" duration-ms="4623" started-at="2022-03-11T16:40:04 EST" finished-at="2022-03-11T16:40:09 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsPersonalInfoPageTest -->
+        <test-method status="PASS" signature="uLCPersonalInfoNameFieldTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCPersonalInfoNameFieldTest" duration-ms="13869" started-at="2022-03-11T16:40:09 EST" finished-at="2022-03-11T16:40:22 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCPersonalInfoNameFieldTest -->
+        <test-method status="PASS" signature="uLCPersonalInfoEmailFieldTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCPersonalInfoEmailFieldTest" duration-ms="13899" started-at="2022-03-11T16:40:22 EST" finished-at="2022-03-11T16:40:36 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCPersonalInfoEmailFieldTest -->
+        <test-method status="PASS" signature="uLCPersonalInfoPhoneFieldTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCPersonalInfoPhoneFieldTest" duration-ms="13616" started-at="2022-03-11T16:40:36 EST" finished-at="2022-03-11T16:40:50 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCPersonalInfoPhoneFieldTest -->
+        <test-method status="PASS" signature="uLCPersonalInfoMessageFieldTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCPersonalInfoMessageFieldTest" duration-ms="12180" started-at="2022-03-11T16:40:50 EST" finished-at="2022-03-11T16:41:02 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCPersonalInfoMessageFieldTest -->
+        <test-method status="PASS" signature="uLCPersonalInfoSubmitTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCPersonalInfoSubmitTest" duration-ms="19894" started-at="2022-03-11T16:41:02 EST" finished-at="2022-03-11T16:41:22 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCPersonalInfoSubmitTest -->
+        <test-method status="PASS" signature="uLCContactsPageMapTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsPageMapTest" duration-ms="7388" started-at="2022-03-11T16:41:22 EST" finished-at="2022-03-11T16:41:29 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsPageMapTest -->
+        <test-method status="PASS" signature="uLCContactsPageMapDirectionTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsPageMapDirectionTest" duration-ms="16144" started-at="2022-03-11T16:41:29 EST" finished-at="2022-03-11T16:41:46 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsPageMapDirectionTest -->
+        <test-method status="PASS" signature="uLCPagePlaceCardReviewTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCPagePlaceCardReviewTest" duration-ms="20675" started-at="2022-03-11T16:41:46 EST" finished-at="2022-03-11T16:42:06 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCPagePlaceCardReviewTest -->
+        <test-method status="PASS" signature="uLCPageViewLargeMapTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCPageViewLargeMapTest" duration-ms="20050" started-at="2022-03-11T16:42:06 EST" finished-at="2022-03-11T16:42:26 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCPageViewLargeMapTest -->
+        <test-method status="PASS" signature="uLCContactsPageAboutUsTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsPageAboutUsTest" duration-ms="6317" started-at="2022-03-11T16:42:26 EST" finished-at="2022-03-11T16:42:33 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsPageAboutUsTest -->
+        <test-method status="PASS" signature="uLCContactsPageCategoriesTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsPageCategoriesTest" duration-ms="4572" started-at="2022-03-11T16:42:33 EST" finished-at="2022-03-11T16:42:37 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsPageCategoriesTest -->
+        <test-method status="PASS" signature="uLCContactsCategoriesHomeTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsCategoriesHomeTest" duration-ms="5255" started-at="2022-03-11T16:42:37 EST" finished-at="2022-03-11T16:42:42 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsCategoriesHomeTest -->
+        <test-method status="PASS" signature="uLCContactsCategoriesAboutUSTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsCategoriesAboutUSTest" duration-ms="5633" started-at="2022-03-11T16:42:42 EST" finished-at="2022-03-11T16:42:48 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsCategoriesAboutUSTest -->
+        <test-method status="PASS" signature="uLCContactsCategoriesCorpPacksTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsCategoriesCorpPacksTest" duration-ms="6491" started-at="2022-03-11T16:42:48 EST" finished-at="2022-03-11T16:42:55 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsCategoriesCorpPacksTest -->
+        <test-method status="PASS" signature="uLCContactsCategoriesInternExamTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsCategoriesInternExamTest" duration-ms="6320" started-at="2022-03-11T16:42:55 EST" finished-at="2022-03-11T16:43:01 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsCategoriesInternExamTest -->
+        <test-method status="PASS" signature="uLCContactsCategoriesUniKidsTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsCategoriesUniKidsTest" duration-ms="7452" started-at="2022-03-11T16:43:01 EST" finished-at="2022-03-11T16:43:08 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsCategoriesUniKidsTest -->
+        <test-method status="PASS" signature="uLCContactsCategoriesCoursesTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsCategoriesCoursesTest" duration-ms="6833" started-at="2022-03-11T16:43:08 EST" finished-at="2022-03-11T16:43:15 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsCategoriesCoursesTest -->
+        <test-method status="PASS" signature="uLCContactsCategoriesNewsTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsCategoriesNewsTest" duration-ms="6640" started-at="2022-03-11T16:43:15 EST" finished-at="2022-03-11T16:43:22 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsCategoriesNewsTest -->
+        <test-method status="PASS" signature="uLCContactsCategoriesContactsTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsCategoriesContactsTest" duration-ms="5719" started-at="2022-03-11T16:43:22 EST" finished-at="2022-03-11T16:43:28 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsCategoriesContactsTest -->
+        <test-method status="PASS" signature="uLCContactsPageFollowUsTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsPageFollowUsTest" duration-ms="4891" started-at="2022-03-11T16:43:28 EST" finished-at="2022-03-11T16:43:32 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsPageFollowUsTest -->
+        <test-method status="PASS" signature="uLCContactsPageAddressTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsPageAddressTest" duration-ms="4786" started-at="2022-03-11T16:43:32 EST" finished-at="2022-03-11T16:43:37 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsPageAddressTest -->
+        <test-method status="PASS" signature="uLCContactsPagePhoneTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsPagePhoneTest" duration-ms="4619" started-at="2022-03-11T16:43:37 EST" finished-at="2022-03-11T16:43:42 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsPagePhoneTest -->
+        <test-method status="PASS" signature="uLCContactsPageEmailTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsPageEmailTest" duration-ms="7081" started-at="2022-03-11T16:43:42 EST" finished-at="2022-03-11T16:43:49 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsPageEmailTest -->
+        <test-method status="PASS" signature="uLCContactsPageFacebookTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsPageFacebookTest" duration-ms="8099" started-at="2022-03-11T16:43:49 EST" finished-at="2022-03-11T16:43:57 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsPageFacebookTest -->
+        <test-method status="PASS" signature="uLCContactsPageInstagramTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsPageInstagramTest" duration-ms="18162" started-at="2022-03-11T16:43:57 EST" finished-at="2022-03-11T16:44:15 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsPageInstagramTest -->
+        <test-method status="PASS" signature="uLCContactsPageSkypeTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="uLCContactsPageSkypeTest" duration-ms="17536" started-at="2022-03-11T16:44:15 EST" finished-at="2022-03-11T16:44:33 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCContactsPageSkypeTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034]" name="tearDown" is-config="true" duration-ms="5789" started-at="2022-03-11T16:44:33 EST" finished-at="2022-03-11T16:44:39 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Web365.ULC.Tab.Test.ULCContactsTabPageTest -->
+      <class name="com.Web365.ULC.Tab.Test.ULCInternExamTabPageTest">
+        <test-method status="PASS" signature="openUCLPage()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCInternExamTabPageTest@3aeaafa6]" name="openUCLPage" is-config="true" duration-ms="4347" started-at="2022-03-11T16:37:36 EST" finished-at="2022-03-11T16:37:40 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUCLPage -->
+        <test-method status="PASS" signature="uLCInternExamTabTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCInternExamTabPageTest@3aeaafa6]" name="uLCInternExamTabTest" duration-ms="15369" started-at="2022-03-11T16:37:40 EST" finished-at="2022-03-11T16:37:55 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCInternExamTabTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCInternExamTabPageTest@3aeaafa6]" name="tearDown" is-config="true" duration-ms="5708" started-at="2022-03-11T16:37:55 EST" finished-at="2022-03-11T16:38:01 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Web365.ULC.Tab.Test.ULCInternExamTabPageTest -->
+      <class name="com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest">
+        <test-method status="PASS" signature="openUCLPage()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4]" name="openUCLPage" is-config="true" duration-ms="6749" started-at="2022-03-11T16:38:56 EST" finished-at="2022-03-11T16:39:02 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUCLPage -->
+        <test-method status="PASS" signature="uLCCoursesTabLangPageTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4]" name="uLCCoursesTabLangPageTest" duration-ms="7981" started-at="2022-03-11T16:39:02 EST" finished-at="2022-03-11T16:39:10 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCCoursesTabLangPageTest -->
+        <test-method status="PASS" signature="uLCCoursesTabUniKidsPageTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4]" name="uLCCoursesTabUniKidsPageTest" duration-ms="2532" started-at="2022-03-11T16:39:10 EST" finished-at="2022-03-11T16:39:13 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCCoursesTabUniKidsPageTest -->
+        <test-method status="PASS" signature="uLCCoursesTabUniKidsEnglishTabTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4]" name="uLCCoursesTabUniKidsEnglishTabTest" duration-ms="4758" started-at="2022-03-11T16:39:13 EST" finished-at="2022-03-11T16:39:18 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCCoursesTabUniKidsEnglishTabTest -->
+        <test-method status="PASS" signature="uLCCoursesTabUniKidsGermanTabTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4]" name="uLCCoursesTabUniKidsGermanTabTest" duration-ms="5936" started-at="2022-03-11T16:39:18 EST" finished-at="2022-03-11T16:39:24 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCCoursesTabUniKidsGermanTabTest -->
+        <test-method status="PASS" signature="uLCCoursesTabUniKidsFrenchTabTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4]" name="uLCCoursesTabUniKidsFrenchTabTest" duration-ms="3119" started-at="2022-03-11T16:39:24 EST" finished-at="2022-03-11T16:39:27 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCCoursesTabUniKidsFrenchTabTest -->
+        <test-method status="PASS" signature="uLCCoursesTabLevelsPageTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4]" name="uLCCoursesTabLevelsPageTest" duration-ms="4936" started-at="2022-03-11T16:39:27 EST" finished-at="2022-03-11T16:39:32 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCCoursesTabLevelsPageTest -->
+        <test-method status="PASS" signature="uLCCoursesTabTariffsPageTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4]" name="uLCCoursesTabTariffsPageTest" duration-ms="4801" started-at="2022-03-11T16:39:32 EST" finished-at="2022-03-11T16:39:36 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCCoursesTabTariffsPageTest -->
+        <test-method status="PASS" signature="uLCCoursesTabSeminarsPageTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4]" name="uLCCoursesTabSeminarsPageTest" duration-ms="2819" started-at="2022-03-11T16:39:36 EST" finished-at="2022-03-11T16:39:39 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCCoursesTabSeminarsPageTest -->
+        <test-method status="PASS" signature="uLCCoursesTabNewsPageTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4]" name="uLCCoursesTabNewsPageTest" duration-ms="5865" started-at="2022-03-11T16:39:39 EST" finished-at="2022-03-11T16:39:45 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCCoursesTabNewsPageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4]" name="tearDown" is-config="true" duration-ms="5746" started-at="2022-03-11T16:39:45 EST" finished-at="2022-03-11T16:39:51 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest -->
+      <class name="com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest">
+        <test-method status="PASS" signature="openUCLPage()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest@77f99a05]" name="openUCLPage" is-config="true" duration-ms="6207" started-at="2022-03-11T16:34:49 EST" finished-at="2022-03-11T16:34:56 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUCLPage -->
+        <test-method status="PASS" signature="uLCHomePageAboutUsAboutUsTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest@77f99a05]" name="uLCHomePageAboutUsAboutUsTest" duration-ms="21581" started-at="2022-03-11T16:34:56 EST" finished-at="2022-03-11T16:35:17 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCHomePageAboutUsAboutUsTest -->
+        <test-method status="PASS" signature="uLCHomePageAboutUsStaffTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest@77f99a05]" name="uLCHomePageAboutUsStaffTest" duration-ms="11118" started-at="2022-03-11T16:35:17 EST" finished-at="2022-03-11T16:35:28 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCHomePageAboutUsStaffTest -->
+        <test-method status="PASS" signature="uLCHomePageAboutUsVacancyTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest@77f99a05]" name="uLCHomePageAboutUsVacancyTest" duration-ms="19200" started-at="2022-03-11T16:35:28 EST" finished-at="2022-03-11T16:35:47 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCHomePageAboutUsVacancyTest -->
+        <test-method status="PASS" signature="uLCHomePageAboutUsGalleryTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest@77f99a05]" name="uLCHomePageAboutUsGalleryTest" duration-ms="18893" started-at="2022-03-11T16:35:47 EST" finished-at="2022-03-11T16:36:06 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCHomePageAboutUsGalleryTest -->
+        <test-method status="PASS" signature="uLCGalleryImagesTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest@77f99a05]" name="uLCGalleryImagesTest" duration-ms="33547" started-at="2022-03-11T16:36:06 EST" finished-at="2022-03-11T16:36:40 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCGalleryImagesTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest@77f99a05]" name="tearDown" is-config="true" duration-ms="5832" started-at="2022-03-11T16:36:40 EST" finished-at="2022-03-11T16:36:46 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest -->
+      <class name="com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest">
+        <test-method status="PASS" signature="openUCLPage()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest@76a3e297]" name="openUCLPage" is-config="true" duration-ms="4370" started-at="2022-03-11T16:38:01 EST" finished-at="2022-03-11T16:38:05 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUCLPage -->
+        <test-method status="PASS" signature="uLCIntesolWorldTPageTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest@76a3e297]" name="uLCIntesolWorldTPageTest" duration-ms="9389" started-at="2022-03-11T16:38:05 EST" finished-at="2022-03-11T16:38:15 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCIntesolWorldTPageTest -->
+        <test-method status="PASS" signature="uLCIntesolWorldESPPageTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest@76a3e297]" name="uLCIntesolWorldESPPageTest" duration-ms="19370" started-at="2022-03-11T16:38:15 EST" finished-at="2022-03-11T16:38:34 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCIntesolWorldESPPageTest -->
+        <test-method status="PASS" signature="uLCESPEnglishForAcademicPurposeTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest@76a3e297]" name="uLCESPEnglishForAcademicPurposeTest" duration-ms="6367" started-at="2022-03-11T16:38:34 EST" finished-at="2022-03-11T16:38:41 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCESPEnglishForAcademicPurposeTest -->
+        <test-method status="PASS" signature="uLCEforAPCertificateEnglishGrammar()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest@76a3e297]" name="uLCEforAPCertificateEnglishGrammar" duration-ms="3699" started-at="2022-03-11T16:38:41 EST" finished-at="2022-03-11T16:38:44 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCEforAPCertificateEnglishGrammar -->
+        <test-method status="PASS" signature="uLCESPEnglishForHospitality()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest@76a3e297]" name="uLCESPEnglishForHospitality" duration-ms="5496" started-at="2022-03-11T16:38:44 EST" finished-at="2022-03-11T16:38:50 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCESPEnglishForHospitality -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest@76a3e297]" name="tearDown" is-config="true" duration-ms="5853" started-at="2022-03-11T16:38:50 EST" finished-at="2022-03-11T16:38:56 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest -->
+      <class name="com.Web365.ULC.Tab.Test.ULCTabTest">
+        <test-method status="PASS" signature="openUCLPage()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCTabTest@262b2c86]" name="openUCLPage" is-config="true" duration-ms="7503" started-at="2022-03-11T16:32:18 EST" finished-at="2022-03-11T16:32:26 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUCLPage -->
+        <test-method status="PASS" signature="universalLanguageCenterPageTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCTabTest@262b2c86]" name="universalLanguageCenterPageTest" duration-ms="25162" started-at="2022-03-11T16:32:26 EST" finished-at="2022-03-11T16:32:51 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- universalLanguageCenterPageTest -->
+        <test-method status="PASS" signature="uLCPageBookNowTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCTabTest@262b2c86]" name="uLCPageBookNowTest" duration-ms="28138" started-at="2022-03-11T16:32:51 EST" finished-at="2022-03-11T16:33:19 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCPageBookNowTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCTabTest@262b2c86]" name="tearDown" is-config="true" duration-ms="5778" started-at="2022-03-11T16:33:19 EST" finished-at="2022-03-11T16:33:25 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Web365.ULC.Tab.Test.ULCTabTest -->
+      <class name="com.Web365.ULC.Tab.Test.ULCHomeTabPageTest">
+        <test-method status="PASS" signature="openUCLPage()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCHomeTabPageTest@a38d7a3]" name="openUCLPage" is-config="true" duration-ms="4453" started-at="2022-03-11T16:33:25 EST" finished-at="2022-03-11T16:33:29 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUCLPage -->
+        <test-method status="PASS" signature="uLCHomePageRegisterTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCHomeTabPageTest@a38d7a3]" name="uLCHomePageRegisterTest" duration-ms="15873" started-at="2022-03-11T16:33:29 EST" finished-at="2022-03-11T16:33:45 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCHomePageRegisterTest -->
+        <test-method status="PASS" signature="uLCHomePageCoursesTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCHomeTabPageTest@a38d7a3]" name="uLCHomePageCoursesTest" duration-ms="9573" started-at="2022-03-11T16:33:45 EST" finished-at="2022-03-11T16:33:55 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCHomePageCoursesTest -->
+        <test-method status="PASS" signature="uLCCoursesGermanLanguageTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCHomeTabPageTest@a38d7a3]" name="uLCCoursesGermanLanguageTest" duration-ms="6299" started-at="2022-03-11T16:33:55 EST" finished-at="2022-03-11T16:34:01 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCCoursesGermanLanguageTest -->
+        <test-method status="PASS" signature="uLCCoursesRussianLanguageTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCHomeTabPageTest@a38d7a3]" name="uLCCoursesRussianLanguageTest" duration-ms="14469" started-at="2022-03-11T16:34:01 EST" finished-at="2022-03-11T16:34:15 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCCoursesRussianLanguageTest -->
+        <test-method status="PASS" signature="uLCHomePageUniKidsTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCHomeTabPageTest@a38d7a3]" name="uLCHomePageUniKidsTest" duration-ms="9409" started-at="2022-03-11T16:34:15 EST" finished-at="2022-03-11T16:34:25 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCHomePageUniKidsTest -->
+        <test-method status="PASS" signature="uLCHomePageIntExamTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCHomeTabPageTest@a38d7a3]" name="uLCHomePageIntExamTest" duration-ms="8244" started-at="2022-03-11T16:34:25 EST" finished-at="2022-03-11T16:34:33 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCHomePageIntExamTest -->
+        <test-method status="PASS" signature="uLCHomePageCorpPackTest()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCHomeTabPageTest@a38d7a3]" name="uLCHomePageCorpPackTest" duration-ms="10227" started-at="2022-03-11T16:34:33 EST" finished-at="2022-03-11T16:34:43 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uLCHomePageCorpPackTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Web365.ULC.Tab.Test.ULCHomeTabPageTest@a38d7a3]" name="tearDown" is-config="true" duration-ms="5981" started-at="2022-03-11T16:34:43 EST" finished-at="2022-03-11T16:34:49 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Web365.ULC.Tab.Test.ULCHomeTabPageTest -->
+    </test> <!-- ULC Tab Test -->
+  </suite> <!-- ULC Regression suite -->
+</testng-results>

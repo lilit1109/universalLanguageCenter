@@ -20,11 +20,11 @@ public class ULCInternationalExamPage extends ULCHomePage{
 	
 	
 	public ULCInternationalExamPage goToInternExamPage() {
-	intExamPage.click();
+	moveToElement(intExamPage);
 	return new ULCInternationalExamPage(this.driver);	
 	}
 	public ULCInternationalExamPage goToIntExamToeflInf() {
-	intExamToefl.click();
+		moveToElement(intExamToefl);
 	return new ULCInternationalExamPage(this.driver);
 		
 	}

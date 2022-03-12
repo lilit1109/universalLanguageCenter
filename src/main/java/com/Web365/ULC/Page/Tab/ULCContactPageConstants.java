@@ -14,11 +14,11 @@ public class ULCContactPageConstants {
 
 	public static final String CONTACTS_PAGE_MAP_PAGE_XPATH = "//div[@class='map']";
 	public static final String CONTACTS_PAGE_MAP_PLACE_CARD_XPATH = "//div[@class='place-card place-card-large']";
-	public static final String CONTACTS_PAGE_MAP_PLACE_CARD_DIRECTION_XPATH = "//div[@class='icon navigate-icon']";
+	public static final String CONTACTS_PAGE_MAP_PLACE_CARD_DIRECTION_XPATH = "//div[@class='default-card']";
 	public static final String CONTACTS_PAGE_MAP_PLACE_CARD_REVIEW_XPATH = "//a[@class='review-box-link']";
 	public static final String CONTACTS_PAGE_REVIEW_PAGE_XPATH = "//div[@class='P5Bobd']";
 	public static final String REVIEW_PAGE_WRITE_REVIEW_PAGE_XPATH = "//span[@class='qpOrC']//span[@class='VVyThd']";
-	public static final String CONTACTS_PAGE_MAP_PLACE_CARD_VIEWLARGEMAP_XPATH = "//div[@class='google-maps-link']";
+	public static final String CONTACTS_PAGE_MAP_PLACE_CARD_VIEWLARGEMAP_XPATH = "//div[@class='place-card place-card-large']";
 	public static final String CONTACTS_PAGE_GOOGLE_MAP_STARTING_POINT_BOX_XPATH = "//div[@id='sb_ifc50']//input[@class='tactile-searchbox-input']";
 	public static final String CONTACTS_PAGE_GOOGLE_MAP_DASTINATION_BOX_XPATH = "//div[@id='sb_ifc51']//input[@class='tactile-searchbox-input']";
 	public static final String CONTACTS_PAGE_MAP_SATELLITE_IMAGE_BATTON_XPATH = "//button[@class='gm-inset-map gm-inset-light']";

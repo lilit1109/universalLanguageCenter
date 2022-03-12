@@ -34,55 +34,55 @@ public class ULCCoursesPage extends ULCHomePage {
 	public WebElement newsTabPg;
 
 	public ULCCoursesPage goToLanguagesTabPg() {
-		languageTabPg.click();
+		moveToElement(languageTabPg);
 		return new ULCCoursesPage(this.driver);
 
 	}
 
 	public ULCCoursesPage goToUniKidPg() {
-		unikidsPg.click();
+		moveToElement(unikidsPg);
 		return new ULCCoursesPage(this.driver);
 
 	}
 
 	public ULCCoursesPage goToUniKidEnglPg() {
-		unikidsEngl.click();
+		moveToElement(unikidsEngl);
 		return new ULCCoursesPage(this.driver);
 
 	}
 
 	public ULCCoursesPage goToUniKidGermPg() {
-		unikidsGerm.click();
+		moveToElement(unikidsGerm);
 		return new ULCCoursesPage(this.driver);
 
 	}
 
 	public ULCCoursesPage goToUniKidFrchPg() {
-		unikidsFrch.click();
+		moveToElement(unikidsFrch);
 		return new ULCCoursesPage(this.driver);
 
 	}
 
 	public ULCCoursesPage goToLevelsTabPg() {
-		levelsTabPg.click();
+		moveToElement(levelsTabPg);
 		return new ULCCoursesPage(this.driver);
 
 	}
 
 	public ULCCoursesPage goToTariffsTabPg() {
-		tariffsTabPg.click();
+		moveToElement(tariffsTabPg);
 		return new ULCCoursesPage(this.driver);
 
 	}
 
 	public ULCCoursesPage goToSeminarsTabPg() {
-		seminarsTabPg.click();
+		moveToElement(seminarsTabPg);
 		return new ULCCoursesPage(this.driver);
 
 	}
 
 	public ULCCoursesPage goToNewsTabPg() {
-		newsTabPg.click();
+		moveToElement(newsTabPg);
 		return new ULCCoursesPage(this.driver);
 
 	}

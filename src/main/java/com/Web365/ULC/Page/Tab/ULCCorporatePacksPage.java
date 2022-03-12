@@ -20,15 +20,15 @@ public class ULCCorporatePacksPage extends ULCHomePage{
  public WebElement slideMapItemSkil;
  
  public ULCCorporatePacksPage goToPDFbtn() {
-		pdfFile.click();
+		moveToElement(pdfFile);
 		return new ULCCorporatePacksPage(this.driver);
  }
 public ULCCorporatePacksPage goToSlideMap() {
-		slideMap.click();
+		moveToElement(slideMap);
 		return new ULCCorporatePacksPage(this.driver);
  }
 public ULCCorporatePacksPage goToSlideMapeItem() {
-	slideMapItemSkil.click();
+	moveToElement(slideMapItemSkil);
 		return new ULCCorporatePacksPage(this.driver);
  }
 

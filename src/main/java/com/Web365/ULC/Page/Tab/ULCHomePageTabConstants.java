@@ -4,7 +4,7 @@ public class ULCHomePageTabConstants {
 	public static final String HOME_PAGE_REGISTER_BATTON_XPATH = "//a[@class='map-button']";
 	public static final String PLACEMENT_TEST_PAGE_XPATH= "//div[@class='freebirdFormviewerViewHeaderHeaderFooter']";
 	public static final String PLACEMENT_TEST_SIGNIN_XPATH = "//body[@dir='ltr' and @class='freebirdLightBackground']";
-	public static final String PLACEMENT_TEST_SIGNIN_BTN_XPATH = "//div[@class='appsMaterialWizDialogPaperdialogBottomButtons exportButtons']//span[@class='appsMaterialWizButtonPaperbuttonLabel quantumWizButtonPaperbuttonLabel exportLabel' and text() = 'Sign in']";
+	public static final String PLACEMENT_TEST_SIGNIN_BTN_XPATH = "//a[text() = 'Sign in to Google']";
 	public static final String SIGNIN_TYPE_INFORMATION_XPATH = "//input[@type='email']";
 	public static final String SIGNIN_PAGE_XPATH = "//div[@jsname='paFcre']";
 	public static final String SIGNIN_PAGE_NEXT_BATTON_XPATH = "//span[@jsname='V67aGc' and text() = 'Next']";
@@ -13,7 +13,7 @@ public class ULCHomePageTabConstants {
 	public static final String CREATE_ACCOUNT_FORMYSELF_XPATH = "//span[text()='For myself']";
 	public static final String LANGUAGES_PAGE_ESP_TEXT_XPATH = "//p//strong[text() = 'English for Special/ Specific Purposes (ESP)']";
 	public static final String GERMAN_COURSES_IMAGES_XPATH = "//img[@src='/img/iconn2.jpg']";
-	public static final String GERMAN_FOR_SPEC_PURPOSES_TEXT_XPATH = "//p//strong[text()='German for Specific Purposes']";
+	public static final String GERMAN_FOR_SPEC_PURPOSES_TEXT_XPATH = "//div[@class='container pencil_edit']";
 	public static final String HOME_PAGE_UNIKIDS_XPATH = "//div[@class='cont-animation']//a[@href='/Home/English']";
 	public static final String UNIKIDS_SUMMER_PROGRAM_XPATH = "//div[@class='container']//h2[text() = 'UniKids summer program']";
 	public static final String UNIKIDS_PROGRAM_PUZZLE_IMAGE_XPATH = "//img[@src='/img/icon3.png']";

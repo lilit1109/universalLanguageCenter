@@ -1,0 +1,379 @@
+<html>
+<head>
+<title>TestNG:  ULC Tab Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ULC Tab Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>60/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Mar 11 16:32:18 EST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>740 seconds (740284 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsCategoriesUniKidsTest()'><b>uLCContactsCategoriesUniKidsTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest.uLCIntesolWorldESPPageTest()'><b>uLCIntesolWorldESPPageTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest</td>
+<td></td>
+<td>19</td>
+<td>com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest@76a3e297</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest.uLCHomePageCorpPacksPdfTest()'><b>uLCHomePageCorpPacksPdfTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest</td>
+<td></td>
+<td>11</td>
+<td>com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest@63440df3</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCHomeTabPageTest.uLCHomePageCorpPackTest()'><b>uLCHomePageCorpPackTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCHomeTabPageTest</td>
+<td></td>
+<td>10</td>
+<td>com.Web365.ULC.Tab.Test.ULCHomeTabPageTest@a38d7a3</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest.uLCCoursesTabNewsPageTest()'><b>uLCCoursesTabNewsPageTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsPersonalInfoPageTest()'><b>uLCContactsPersonalInfoPageTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsCategoriesCoursesTest()'><b>uLCContactsCategoriesCoursesTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsCategoriesNewsTest()'><b>uLCContactsCategoriesNewsTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCHomeTabPageTest.uLCHomePageUniKidsTest()'><b>uLCHomePageUniKidsTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCHomeTabPageTest</td>
+<td></td>
+<td>9</td>
+<td>com.Web365.ULC.Tab.Test.ULCHomeTabPageTest@a38d7a3</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest.uLCIntesolWorldTPageTest()'><b>uLCIntesolWorldTPageTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest</td>
+<td></td>
+<td>9</td>
+<td>com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest@76a3e297</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest.uLCCoursesTabUniKidsPageTest()'><b>uLCCoursesTabUniKidsPageTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest.uLCHomePageAboutUsVacancyTest()'><b>uLCHomePageAboutUsVacancyTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest</td>
+<td></td>
+<td>19</td>
+<td>com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest@77f99a05</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsPageAddressTest()'><b>uLCContactsPageAddressTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCPageViewLargeMapTest()'><b>uLCPageViewLargeMapTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>20</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest.uLCEforAPCertificateEnglishGrammar()'><b>uLCEforAPCertificateEnglishGrammar</b><br>Test class: com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest@76a3e297</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCHomeTabPageTest.uLCHomePageRegisterTest()'><b>uLCHomePageRegisterTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCHomeTabPageTest</td>
+<td></td>
+<td>15</td>
+<td>com.Web365.ULC.Tab.Test.ULCHomeTabPageTest@a38d7a3</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest.uLCCoursesTabTariffsPageTest()'><b>uLCCoursesTabTariffsPageTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest.uLCHomePageAboutUsStaffTest()'><b>uLCHomePageAboutUsStaffTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest</td>
+<td></td>
+<td>11</td>
+<td>com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest@77f99a05</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest.uLCCoursesTabUniKidsGermanTabTest()'><b>uLCCoursesTabUniKidsGermanTabTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsCategoriesCorpPacksTest()'><b>uLCContactsCategoriesCorpPacksTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCHomeTabPageTest.uLCCoursesGermanLanguageTest()'><b>uLCCoursesGermanLanguageTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCHomeTabPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.Web365.ULC.Tab.Test.ULCHomeTabPageTest@a38d7a3</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCHomeTabPageTest.uLCHomePageCoursesTest()'><b>uLCHomePageCoursesTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCHomeTabPageTest</td>
+<td></td>
+<td>9</td>
+<td>com.Web365.ULC.Tab.Test.ULCHomeTabPageTest@a38d7a3</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCPersonalInfoMessageFieldTest()'><b>uLCPersonalInfoMessageFieldTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>12</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsPageSkypeTest()'><b>uLCContactsPageSkypeTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>17</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCPersonalInfoPhoneFieldTest()'><b>uLCPersonalInfoPhoneFieldTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>13</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCPersonalInfoEmailFieldTest()'><b>uLCPersonalInfoEmailFieldTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>13</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCPersonalInfoNameFieldTest()'><b>uLCPersonalInfoNameFieldTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>13</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest.uLCESPEnglishForHospitality()'><b>uLCESPEnglishForHospitality</b><br>Test class: com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest@76a3e297</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsPageMapDirectionTest()'><b>uLCContactsPageMapDirectionTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>16</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsCategoriesInternExamTest()'><b>uLCContactsCategoriesInternExamTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest.uLCHomePageCorpPacksTest()'><b>uLCHomePageCorpPacksTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest</td>
+<td></td>
+<td>17</td>
+<td>com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest@63440df3</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest.uLCCoursesTabLangPageTest()'><b>uLCCoursesTabLangPageTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest.uLCCoursesTabLevelsPageTest()'><b>uLCCoursesTabLevelsPageTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsPageAboutUsTest()'><b>uLCContactsPageAboutUsTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsPageEmailTest()'><b>uLCContactsPageEmailTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsPageFacebookTest()'><b>uLCContactsPageFacebookTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest.uLCCoursesTabUniKidsEnglishTabTest()'><b>uLCCoursesTabUniKidsEnglishTabTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsCategoriesHomeTest()'><b>uLCContactsCategoriesHomeTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCInternExamTabPageTest.uLCInternExamTabTest()'><b>uLCInternExamTabTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCInternExamTabPageTest</td>
+<td></td>
+<td>15</td>
+<td>com.Web365.ULC.Tab.Test.ULCInternExamTabPageTest@3aeaafa6</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsPagePhoneTest()'><b>uLCContactsPagePhoneTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsCategoriesContactsTest()'><b>uLCContactsCategoriesContactsTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest.uLCGalleryImagesTest()'><b>uLCGalleryImagesTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest</td>
+<td></td>
+<td>33</td>
+<td>com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest@77f99a05</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCPagePlaceCardReviewTest()'><b>uLCPagePlaceCardReviewTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>20</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsPageCategoriesTest()'><b>uLCContactsPageCategoriesTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCHomeTabPageTest.uLCHomePageIntExamTest()'><b>uLCHomePageIntExamTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCHomeTabPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.Web365.ULC.Tab.Test.ULCHomeTabPageTest@a38d7a3</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest.uLCESPEnglishForAcademicPurposeTest()'><b>uLCESPEnglishForAcademicPurposeTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest@76a3e297</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest.uLCCoursesTabUniKidsFrenchTabTest()'><b>uLCCoursesTabUniKidsFrenchTabTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsTabPageTest()'><b>uLCContactsTabPageTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsPageInstagramTest()'><b>uLCContactsPageInstagramTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>18</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCTabTest.uLCPageBookNowTest()'><b>uLCPageBookNowTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCTabTest</td>
+<td></td>
+<td>28</td>
+<td>com.Web365.ULC.Tab.Test.ULCTabTest@262b2c86</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsPageMapTest()'><b>uLCContactsPageMapTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCHomeTabPageTest.uLCCoursesRussianLanguageTest()'><b>uLCCoursesRussianLanguageTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCHomeTabPageTest</td>
+<td></td>
+<td>14</td>
+<td>com.Web365.ULC.Tab.Test.ULCHomeTabPageTest@a38d7a3</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest.uLCCoursesTabSeminarsPageTest()'><b>uLCCoursesTabSeminarsPageTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest@4d3167f4</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest.uLCHomePageCorpPacksSlideMapTest()'><b>uLCHomePageCorpPacksSlideMapTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest</td>
+<td></td>
+<td>10</td>
+<td>com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest@63440df3</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsCategoriesAboutUSTest()'><b>uLCContactsCategoriesAboutUSTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCTabTest.universalLanguageCenterPageTest()'><b>universalLanguageCenterPageTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCTabTest</td>
+<td></td>
+<td>25</td>
+<td>com.Web365.ULC.Tab.Test.ULCTabTest@262b2c86</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest.uLCHomePageAboutUsGalleryTest()'><b>uLCHomePageAboutUsGalleryTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest</td>
+<td></td>
+<td>18</td>
+<td>com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest@77f99a05</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCPersonalInfoSubmitTest()'><b>uLCPersonalInfoSubmitTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>19</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest.uLCHomePageAboutUsAboutUsTest()'><b>uLCHomePageAboutUsAboutUsTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest</td>
+<td></td>
+<td>21</td>
+<td>com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest@77f99a05</td></tr>
+<tr>
+<td title='com.Web365.ULC.Tab.Test.ULCContactsTabPageTest.uLCContactsPageFollowUsTest()'><b>uLCContactsPageFollowUsTest</b><br>Test class: com.Web365.ULC.Tab.Test.ULCContactsTabPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Web365.ULC.Tab.Test.ULCContactsTabPageTest@ed9d034</td></tr>
+</table><p>
+</body>
+</html>
