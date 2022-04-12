@@ -109,24 +109,24 @@ public class ULCContactsPage extends ULCHomePage {
 		return new ULCContactsPage(this.driver);
 	}
 
-	public void fillName(String name) {
+	public ULCContactsPage fillName(String name) {
 		inputName.sendKeys(name);
-
+		return new ULCContactsPage(this.driver);
 	}
 
-	public void fillEmail(String email) {
+	public ULCContactsPage fillEmail(String email) {
 		inputEmail.sendKeys(email);
-
+		return new ULCContactsPage(this.driver);
 	}
 
-	public void fillPhoneNum(String phoneNum) {
+	public ULCContactsPage fillPhoneNum(String phoneNum) {
 		inputPhoneNum.sendKeys(phoneNum);
-
+		return new ULCContactsPage(this.driver);
 	}
 
-	public void fillMessage(String message) {
+	public ULCContactsPage fillMessage(String message) {
 		inputMessage.sendKeys(message);
-
+		return new ULCContactsPage(this.driver);
 	}
 
 	public ULCContactsPage goToSbmitbtn() {
@@ -187,20 +187,21 @@ public class ULCContactsPage extends ULCHomePage {
 
 	}
 
-	public void fillStartDirection(String startDir) {
+	public ULCContactsPage fillStartDirection(String startDir) {
 		driver.get(
 				"https://www.google.com/maps/dir//Universe+Language+Centre+%2F+%C2%AB%D5%85%D5%B8%D6%82%D5%B6%D5%AB%D5%BE%D5%A5%D6%80%D5%BD%C2%BB+%D5%AC%D5%A5%D5%A6%D5%BE%D5%AB+%D5%AF%D5%A5%D5%B6%D5%BF%D6%80%D5%B8%D5%B6+49+2+Komitas+Ave+Yerevan+0051,+Armenia/@40.2080701,44.5168151,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x406abd3591ef889d:0x70a05b2a3e46b440!2m2!1d44.5168151!2d40.2080701");
 		moveToElement(inputStartDir);
 		inputStartDir.sendKeys(startDir, Keys.ENTER);
+		return new ULCContactsPage(this.driver);
 
 	}
 
-	public void fillEndDirection(String endDir) throws InterruptedException {
+	public ULCContactsPage fillEndDirection(String endDir) throws InterruptedException {
 		moveToElement(inputEndDir);
 		inputEndDir.sendKeys(endDir, Keys.ENTER);
 		Thread.sleep(2000);
 		driver.get("http://www.ulc.am/Home/Contact");
-
+		return new ULCContactsPage(this.driver);
 	}
 
 	public ULCContactsPage goToSatelliteMap() {
@@ -210,10 +211,10 @@ public class ULCContactsPage extends ULCHomePage {
 
 	}
 
-	public void goToReviewPage() throws InterruptedException {
+	public ULCContactsPage goToReviewPage() throws InterruptedException {
 		driver.get(
 				"https://www.google.com/search?hl=en-US&gl=us&q=49,+Universe+Language+Centre+/+%C2%AB%D5%85%D5%B8%D6%82%D5%B6%D5%AB%D5%BE%D5%A5%D6%80%D5%BD%C2%BB+%D5%AC%D5%A5%D5%A6%D5%BE%D5%AB+%D5%AF%D5%A5%D5%B6%D5%BF%D6%80%D5%B8%D5%B6,+2+Komitas+Ave,+Yerevan+0051,+Armenia&ludocid=8115586765513208896&lsig=AB86z5UQ506tdDz8mw2yPL_OsyuS&hl=en&gl=US#lrd=0x406abd3591ef889d:0x70a05b2a3e46b440,1");
-//		return new ULCContactsPage(this.driver);
+		return new ULCContactsPage(this.driver);
 
 	}
 

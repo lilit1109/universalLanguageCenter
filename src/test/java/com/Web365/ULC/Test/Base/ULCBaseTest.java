@@ -22,7 +22,7 @@ public class ULCBaseTest {
 		driver.manage().window().maximize();
 		driver.get(ULC_URL);
 	ULCHomePage home = new ULCHomePage(driver);
-		home.goToLogo();
+		home = home.goToLogo();
 		Assert.assertTrue(home.homeTab.isDisplayed());
 		
 		}
@@ -34,7 +34,7 @@ public class ULCBaseTest {
 	public void tearDown() throws InterruptedException {
 		driver.close();
 		driver.quit();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 	}
 	
 

@@ -13,20 +13,25 @@ public class ULCIntesolWorldTabPageTest extends ULCBaseTest{
 	public void uLCIntesolWorldTPageTest() throws InterruptedException {
 		ULCIntesolWorldwidePage intWorldwPage = new ULCIntesolWorldwidePage(driver);
 		System.out.println("The Home page is opened, find and click on the Intesol Worldwide");
-		intWorldwPage.goToIntesolWorldwideTab();
+		intWorldwPage = intWorldwPage.goToIntesolWorldwideTab();
 		Thread.sleep(2000);
+		
 		System.out.println("The Intesol Worldwide menu is opened and  go to the TOSL/TEFL/Courses button and click on it");
-		intWorldwPage.goToTesolTeflCoursesPage();
+		intWorldwPage = intWorldwPage.goToTesolTeflCoursesPage();
 		Thread.sleep(2000);
+		
 		System.out.println("Click to the TOSL/TEFL/Courses and find Certificate  In TEFL");
-		intWorldwPage.goToCertificateInTEFL();
+		intWorldwPage = intWorldwPage.goToCertificateInTEFL();
 		Thread.sleep(1000);
+		
 		System.out.println("Click in the Certificate  In TEFL Image");
-		intWorldwPage.goToCertificateInTEFLImage();
+		intWorldwPage = intWorldwPage.goToCertificateInTEFLImage();
 		Thread.sleep(2000);
+		
 		System.out.println("Click to the Certificate In TEFL download button");
-		intWorldwPage.goToDownloadTEFLInfbtn();
+		intWorldwPage = intWorldwPage.goToDownloadTEFLInfbtn();
 		Thread.sleep(1000);
+		
 		System.out.println("Return to the Intesol Worldwide Tab");
 	
 
@@ -35,13 +40,15 @@ public class ULCIntesolWorldTabPageTest extends ULCBaseTest{
 	public void uLCIntesolWorldESPPageTest() throws InterruptedException {
 		ULCIntesolWorldwidePage intWorldwESPPage = new ULCIntesolWorldwidePage(driver);
 		System.out.println("The Home page is opened, find and click on the Intesol Worldwide");
-		intWorldwESPPage.goToIntesolWorldwideTab();
+		intWorldwESPPage = intWorldwESPPage.goToIntesolWorldwideTab();
 		Thread.sleep(1000);
+		
 		System.out.println("The Intesol Worldwide menu is opened and  go to the ESP/Courses button and click on it");
-		intWorldwESPPage.goToEsPCoursesPage();
+		intWorldwESPPage = intWorldwESPPage.goToEsPCoursesPage();
 		Thread.sleep(1000);
+		
 		System.out.println("Open the ESP/Courses page and makesure the Courses menu is displayed");
-		intWorldwESPPage.goToEsPCoursesPageCourses();
+		intWorldwESPPage = intWorldwESPPage.goToEsPCoursesPageCourses();
 		Thread.sleep(1000);
 	}
 		@Test
@@ -49,7 +56,7 @@ public class ULCIntesolWorldTabPageTest extends ULCBaseTest{
 			ULCIntesolWorldwidePage espEfAP = new ULCIntesolWorldwidePage(driver);
 		System.out.println("Click to the ESP/Courses and find English For Academic Purpose");
 		System.out.println("Click on the English For Academic Purpose download button and open the new page");
-		espEfAP.goToEngForAcadPurpose();	
+		espEfAP = espEfAP.goToEngForAcadPurpose();	
 		
 		Thread.sleep(1000);
 	}
@@ -57,13 +64,15 @@ public class ULCIntesolWorldTabPageTest extends ULCBaseTest{
 		public void uLCEforAPCertificateEnglishGrammar() throws InterruptedException {
 			ULCIntesolWorldwidePage eAPCertEngGr = new ULCIntesolWorldwidePage(driver);
 		System.out.println("Click to the ESP/Courses and find English For Academic Purpose");
-		eAPCertEngGr.goToEngForAcadPurposeBtn();		
+		eAPCertEngGr = eAPCertEngGr.goToEngForAcadPurposeBtn();		
 		Thread.sleep(1000);
+		
 		System.out.println("Click to the ESP/Courses and find Certificate English Grammar Information");
-		eAPCertEngGr.goToCertificateInEngGram();
+		eAPCertEngGr = eAPCertEngGr.goToCertificateInEngGram();
 		Thread.sleep(1000);
+		
 		System.out.println("The Certificate for English Grammar Information is displayed");
-		eAPCertEngGr.goToCertEngGramInf();
+		eAPCertEngGr = eAPCertEngGr.goToCertEngGramInf();
 		Thread.sleep(1000);
 		
 	    }
@@ -71,11 +80,13 @@ public class ULCIntesolWorldTabPageTest extends ULCBaseTest{
 		public void uLCESPEnglishForHospitality() throws InterruptedException {
 			ULCIntesolWorldwidePage eSPEngForHosp = new ULCIntesolWorldwidePage(driver);
 		System.out.println("Click to the ESP/Courses and find English For Hospitality");
-		eSPEngForHosp.goToeEgForHospitality();
+		eSPEngForHosp = eSPEngForHosp.goToeEgForHospitality();
 		Thread.sleep(2000);	
+		
 		System.out.println("In the English For Hospitality page click on the download button");
-		eSPEngForHosp.goToEngForHospDwldBtn();
+		eSPEngForHosp = eSPEngForHosp.goToEngForHospDwldBtn();
 		Thread.sleep(2000);
+		
 		System.out.println("Return to the Intesol Worldwide Tab");
 		Thread.sleep(1000);
 		

@@ -11,113 +11,148 @@ public class ULCCoursesTabPageTest extends ULCBaseTest{
 	public void uLCCoursesTabLangPageTest() throws InterruptedException {
 		ULCCoursesPage coursesTabLgPg = new ULCCoursesPage(driver);
 		System.out.println("The Home page is open, and Courses Tab is displayed.");
-		coursesTabLgPg.goToCoursesTab();
-		Thread.sleep(2000);
+		coursesTabLgPg = coursesTabLgPg.goToCoursesTab();
+		Thread.sleep(1000);
+		
 		System.out.println("The Courses Tab menu is opened and Language tab is opened.");
-		coursesTabLgPg.goToLanguagesTabPg();
-		Thread.sleep(2000);
+		coursesTabLgPg = coursesTabLgPg.goToLanguagesTabPg();
+		Thread.sleep(1000);
+		
 		System.out.println("Return to the Courses Tab.");
-		coursesTabLgPg.goToCoursesTab();
-		Thread.sleep(2000);
+		coursesTabLgPg = coursesTabLgPg.goToCoursesTab();
+		Thread.sleep(1000);
 		
 	}
 	@Test
 	public void uLCCoursesTabUniKidsPageTest() throws InterruptedException {
 		ULCCoursesPage  coursUniKPg = new ULCCoursesPage(driver);
 		System.out.println("The Home page is open, and Courses Tab is displayed.");
-		coursUniKPg.goToCoursesTab();
-		Thread.sleep(2000);
+		coursUniKPg = coursUniKPg.goToCoursesTab();
+		Thread.sleep(1000);
+		
 		System.out.println("The Courses Menu is opened and UniKids is displayed.");
-		coursUniKPg.goToUniKidPg();
+		coursUniKPg = coursUniKPg.goToUniKidPg();
+		Thread.sleep(1000);
+		
 		System.out.println("Return to the Courses Tab.");
-		coursUniKPg.goToCoursesTab();
+		coursUniKPg = coursUniKPg.goToCoursesTab();
+		Thread.sleep(1000);
 	}
 	@Test
 	public void uLCCoursesTabUniKidsEnglishTabTest() throws InterruptedException {
 		ULCCoursesPage  uniKidsEngl = new ULCCoursesPage(driver);
 		System.out.println("The Home page is open, and Courses Tab is displayed.");
-		uniKidsEngl.goToCoursesTab();
-		Thread.sleep(2000);
+		uniKidsEngl = uniKidsEngl.goToCoursesTab();
+		Thread.sleep(1000);
+		
 		System.out.println("The UniKids Menu is opened.");
-		uniKidsEngl.goToUniKidPg();
+		uniKidsEngl = uniKidsEngl.goToUniKidPg();
+		Thread.sleep(1000);
+		
 		System.out.println("The UniKids Menu is opened and  English tab is displayed.");
-		 uniKidsEngl.goToUniKidPg();
-		Thread.sleep(2000);
+		 uniKidsEngl = uniKidsEngl.goToUniKidPg();
+		Thread.sleep(1000);
+		
 		System.out.println("Return to the Courses Tab.");
-		uniKidsEngl.goToCoursesTab();
+		uniKidsEngl = uniKidsEngl.goToCoursesTab();
+		Thread.sleep(1000);
 	}
 	@Test
 	public void uLCCoursesTabUniKidsGermanTabTest() throws InterruptedException {
 		ULCCoursesPage  uniKidsGerm = new ULCCoursesPage(driver);
 		System.out.println("The Home page is open, and Courses Tab is displayed.");
-		uniKidsGerm.goToCoursesTab();
-		Thread.sleep(2000);
+		uniKidsGerm = uniKidsGerm.goToCoursesTab();
+		Thread.sleep(1000);
+		
 		System.out.println("The UniKids Menu is opened.");
-		uniKidsGerm.goToUniKidPg();
-		Thread.sleep(2000);
+		uniKidsGerm = uniKidsGerm.goToUniKidPg();
+		Thread.sleep(1000);
+		
 		System.out.println("The UniKids Menu is opened and  German tab is displayed.");
-		uniKidsGerm.goToUniKidGermPg();
+		uniKidsGerm = uniKidsGerm.goToUniKidGermPg();
+		Thread.sleep(1000);
+		
 		System.out.println("Return to the Courses Tab.");
-		uniKidsGerm.goToCoursesTab();
+		uniKidsGerm = uniKidsGerm.goToCoursesTab();
+		Thread.sleep(1000);
 	}
 	@Test
 	public void uLCCoursesTabUniKidsFrenchTabTest() throws InterruptedException {
 		ULCCoursesPage  uniKidsFrch = new ULCCoursesPage(driver);
 		System.out.println("The Home page is open, and Courses Tab is displayed.");
-		uniKidsFrch.goToCoursesTab();
+		uniKidsFrch = uniKidsFrch.goToCoursesTab();
+		Thread.sleep(1000);
+		
 		System.out.println("The UniKids Menu is opened.");
-		uniKidsFrch.goToUniKidPg();
-		Thread.sleep(2000);
+		uniKidsFrch = uniKidsFrch.goToUniKidPg();
+		Thread.sleep(1000);
+		
 		System.out.println("The UniKids Menu is opened and  French tab is displayed.");
-		uniKidsFrch.goToUniKidFrchPg();
+		uniKidsFrch = uniKidsFrch.goToUniKidFrchPg();
+		Thread.sleep(1000);
+		
 		System.out.println("Return to the Courses Tab.");
-		uniKidsFrch.goToCoursesTab();
+		uniKidsFrch = uniKidsFrch.goToCoursesTab();
+		Thread.sleep(1000);
 	}
 	@Test
 	public void uLCCoursesTabLevelsPageTest() throws InterruptedException {
 		ULCCoursesPage  coursLevelsPg = new ULCCoursesPage(driver);
 		System.out.println("The Home page is open, and Courses Tab is displayed.");
-		coursLevelsPg.goToCoursesTab();
-		Thread.sleep(2000);
+		coursLevelsPg = coursLevelsPg.goToCoursesTab();
+		Thread.sleep(1000);
+		
 		System.out.println("The Courses Menu is opened and Levels tab is displayed.");
-		coursLevelsPg.goToLevelsTabPg();
-		Thread.sleep(2000);
+		coursLevelsPg = coursLevelsPg.goToLevelsTabPg();
+		Thread.sleep(1000);
+		
 		System.out.println("Return to the Courses Tab.");
-		coursLevelsPg.goToCoursesTab();
+		coursLevelsPg = coursLevelsPg.goToCoursesTab();
+		Thread.sleep(1000);
 	}
 	@Test
 	public void uLCCoursesTabTariffsPageTest() throws InterruptedException {
 		ULCCoursesPage  coursTariffsPg = new ULCCoursesPage(driver);
 		System.out.println("The Home page is open, and Courses Tab is displayed.");
-		coursTariffsPg.goToCoursesTab();
-		Thread.sleep(2000);
+		coursTariffsPg = coursTariffsPg.goToCoursesTab();
+		Thread.sleep(1000);
+		
 		System.out.println("The Courses Menu is opened and Tariffs tab is displayed.");
-		coursTariffsPg.goToTariffsTabPg();
-		Thread.sleep(2000);
+		coursTariffsPg = coursTariffsPg.goToTariffsTabPg();
+		Thread.sleep(1000);
+		
 		System.out.println("Return to the Courses Tab.");
-		coursTariffsPg.goToCoursesTab();
+		coursTariffsPg = coursTariffsPg.goToCoursesTab();
+		Thread.sleep(1000);
 	}
 	@Test
 	public void uLCCoursesTabSeminarsPageTest() throws InterruptedException {
 		ULCCoursesPage  coursSeminarsPg = new ULCCoursesPage(driver);
 		System.out.println("The Home page is open, and Courses Tab is displayed.");
-		coursSeminarsPg.goToCoursesTab();
+		coursSeminarsPg = coursSeminarsPg.goToCoursesTab();
+		Thread.sleep(1000);
+		
 		System.out.println("The Courses Menu is opened and Seminars tab is displayed.");
-		coursSeminarsPg.goToSeminarsTabPg();
-		Thread.sleep(2000);
+		coursSeminarsPg = coursSeminarsPg.goToSeminarsTabPg();
+		Thread.sleep(1000);
+		
 		System.out.println("Return to the Courses Tab.");
-		coursSeminarsPg.goToCoursesTab();
+		coursSeminarsPg = coursSeminarsPg.goToCoursesTab();
+		Thread.sleep(1000);
 	}
 	@Test
 	public void uLCCoursesTabNewsPageTest() throws InterruptedException {
 		ULCCoursesPage  coursNewsPg = new ULCCoursesPage(driver);
 		System.out.println("The Home page is open, and Courses Tab is displayed.");
-		coursNewsPg.goToCoursesTab();
-		Thread.sleep(2000);
+		coursNewsPg = coursNewsPg.goToCoursesTab();
+		Thread.sleep(1000);
+		
 		System.out.println("The Courses Menu is opened and News tab is displayed.");
-		coursNewsPg.goToNewsTabPg();
-		Thread.sleep(2000);
+		coursNewsPg = coursNewsPg.goToNewsTabPg();
+		Thread.sleep(1000);
+		
 		System.out.println("Return to the Courses Tab.");
-		coursNewsPg.goToCoursesTab();
+		coursNewsPg = coursNewsPg.goToCoursesTab();
+		Thread.sleep(1000);
 	}
 }

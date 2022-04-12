@@ -72,8 +72,9 @@ public class ULCHomePageTab extends ULCHomePage {
 		return new ULCHomePageTab(this.driver);
 	}
 
-	public void fillname(String identifierId) {
+	public ULCHomePageTab fillname(String identifierId) {
 		signInTypeInf.sendKeys(identifierId);
+		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCHomePageTab goToGermanLanguage() {

@@ -12,6 +12,7 @@ import com.Web365.ULC.Page.Tab.ULCCorporatePacksPage;
 import com.Web365.ULC.Page.Tab.ULCInternationalExamPage;
 import com.Web365.ULC.Page.Tab.ULCIntesolWorldwidePage;
 import com.Web365.ULC.Page.Tab.ULCCoursesPage;
+import com.Web365.ULC.Page.Tab.ULCHomePageTab;
 
 import static com.Web365.ULC.Page.Home.ULCHomePageConstants.*;
 
@@ -71,10 +72,10 @@ public class ULCHomePage extends ULCBasePage {
 		return new ULCHomePage(this.driver);
 	}
 
-	public ULCHomePage goToHomeTab() {
+	public ULCHomePageTab goToHomeTab() {
 		moveToElement(homeTab);
 		homeTab.click();
-		return new ULCHomePage(this.driver);
+		return new ULCHomePageTab(this.driver);
 	}
 
 	public ULCAboutUsPage goToAboutUsTab() {
@@ -135,24 +136,29 @@ public class ULCHomePage extends ULCBasePage {
 		return new ULCHomePage(this.driver);
 	}
 
-	public void fillFirstName(String name) {
+	public ULCHomePage fillFirstName(String name) {
 		paymentFirstName.sendKeys(name);
+		return new ULCHomePage(this.driver);
 	}
 
-	public void fillLastName(String lastname) {
+	public ULCHomePage fillLastName(String lastname) {
 		paymentLastName.sendKeys(lastname);
+		return new ULCHomePage(this.driver);
 	}
 
-	public void fillEmail(String email) {
+	public ULCHomePage fillEmail(String email) {
 		paymentEmail.sendKeys(email);
+		return new ULCHomePage(this.driver);
 	}
 
-	public void fillPhone(String phone) {
+	public ULCHomePage fillPhone(String phone) {
 		paymentPhone.sendKeys(phone);
+		return new ULCHomePage(this.driver);
 	}
 
-	public void fillMessage(String message) {
+	public ULCHomePage fillMessage(String message) {
 		paymentMessage.sendKeys(message);
+		return new ULCHomePage(this.driver);
 	}
 
 	public ULCHomePage goToPaymentNext() {
