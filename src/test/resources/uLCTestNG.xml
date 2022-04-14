@@ -3,13 +3,13 @@
 <suite name="ULC Regression suite">
 	<test thread-count="1" verbose="2" name="ULC Tab Test">
 		<classes>
-			<class name="com.Web365.ULC.Tab.Test.ULCTabTest">
+			<class name="com.web365.uLc.tab.test.ULCTabTest">
 				<methods>
 					<include name="universalLanguageCenterPageTest" />
 					<include name="uLCPageBookNowTest" />
 				</methods>
 			</class>
-			<class name="com.Web365.ULC.Tab.Test.ULCHomeTabPageTest">
+			<class name="com.web365.uLc.tab.test.ULCHomeTabPageTest">
 				<methods>
 					<include name="uLCHomePageRegisterTest" />
 					<include name="uLCHomePageCoursesTest" />
@@ -20,7 +20,7 @@
 					<include name="uLCHomePageCorpPackTest" />
 				</methods>
 			</class>
-			<class name="com.Web365.ULC.Tab.Test.ULCAboutUsTabPageTest">
+			<class name="com.web365.uLc.tab.test.ULCAboutUsTabPageTest">
 				<methods>
 					<include name="uLCHomePageAboutUsAboutUsTest" />
 					<include name="uLCHomePageAboutUsStaffTest" />
@@ -31,20 +31,20 @@
 				</methods>
 			</class>
 			<class
-				name="com.Web365.ULC.Tab.Test.ULCCorporatePacksTabPageTest">
+				name="com.web365.uLc.tab.test.ULCCorporatePacksTabPageTest">
 				<methods>
 					<include name="uLCHomePageCorpPacksTest" />
 					<include name="uLCHomePageCorpPacksPdfTest" />
 					<include name="uLCHomePageCorpPacksSlideMapTest" />
 				</methods>
 			</class>
-			<class name="com.Web365.ULC.Tab.Test.ULCInternExamTabPageTest">
+			<class name="com.web365.uLc.tab.test.ULCInternExamTabPageTest">
 				<methods>
 					<include name="uLCInternExamTabTest" />
 				</methods>
 			</class>
 			<class
-				name="com.Web365.ULC.Tab.Test.ULCIntesolWorldTabPageTest">
+				name="com.web365.uLc.tab.test.ULCIntesolWorldTabPageTest">
 				<methods>
 					<include name="uLCIntesolWorldTPageTest" />
 					<include name="uLCIntesolWorldESPPageTest" />
@@ -53,7 +53,7 @@
 					<include name="uLCESPEnglishForHospitality" />
 				</methods>
 			</class>
-			<class name="com.Web365.ULC.Tab.Test.ULCCoursesTabPageTest">
+			<class name="com.web365.uLc.tab.test.ULCCoursesTabPageTest">
 				<methods>
 					<include name="uLCCoursesTabLangPageTest" />
 					<include name="uLCCoursesTabUniKidsPageTest" />
@@ -66,7 +66,7 @@
 					<include name="uLCCoursesTabNewsPageTest" />
 				</methods>
 			</class>
-			<class name="com.Web365.ULC.Tab.Test.ULCContactsTabPageTest">
+			<class name="com.web365.uLc.tab.test.ULCContactsTabPageTest">
 				<methods>
 					<include name="uLCContactsTabPageTest" />
 					<include name="uLCContactsPersonalInfoPageTest" />
